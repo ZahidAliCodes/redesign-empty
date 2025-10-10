@@ -1,0 +1,162 @@
+/* MEGA MENU LAYOUT FIX - PREVENT COLUMN DETACHMENT */
+
+/* Override any conflicting flex or grid properties */
+.dropdown-menu.mega-menu {
+    background: var(--dark-color) !important;
+    border: none !important;
+    border-radius: var(--border-radius-md) !important;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3) !important;
+    padding: 0 !important;
+    width: 750px !important;
+    min-width: 750px !important;
+    max-width: 850px !important;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+    position: absolute !important;
+    top: 100% !important;
+}
+
+/* Ensure mega menu fits on screen */
+@media (max-width: 1200px) {
+    .dropdown-menu.mega-menu {
+        width: 90vw !important;
+        min-width: 90vw !important;
+        max-width: 90vw !important;
+        left: 5vw !important;
+        right: auto !important;
+        transform: translateX(0) !important;
+    }
+}
+
+@media (max-width: 900px) {
+    .dropdown-menu.mega-menu {
+        width: 95vw !important;
+        min-width: 95vw !important;
+        max-width: 95vw !important;
+        left: 2.5vw !important;
+    }
+}
+
+/* Ensure mega menu content stays connected */
+.mega-menu-content {
+    background: var(--dark-color) !important;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr 1fr !important;
+    grid-gap: 0 !important;
+    gap: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: var(--border-radius-md) !important;
+    overflow: hidden !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+/* Column layout - no gaps, connected appearance */
+.mega-menu-column {
+    background: var(--dark-color) !important;
+    padding: var(--spacing-lg) var(--spacing-md) !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.08) !important;
+    box-sizing: border-box !important;
+    min-height: 200px !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+/* Remove border from last column */
+.mega-menu-column:last-child {
+    border-right: none !important;
+}
+
+/* First column - rounded left corners */
+.mega-menu-column:first-child {
+    border-top-left-radius: var(--border-radius-md) !important;
+    border-bottom-left-radius: var(--border-radius-md) !important;
+}
+
+/* Last column - rounded right corners */
+.mega-menu-column:last-child {
+    border-top-right-radius: var(--border-radius-md) !important;
+    border-bottom-right-radius: var(--border-radius-md) !important;
+}
+
+/* Column headers */
+.mega-menu-column h4 {
+    background: var(--dark-color) !important;
+    color: var(--accent-color) !important;
+    font-size: var(--font-size-sm) !important;
+    font-weight: 600 !important;
+    margin: 0 0 var(--spacing-md) 0 !important;
+    padding: 0 0 var(--spacing-sm) 0 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    border-bottom: 1px solid rgba(0, 212, 255, 0.2) !important;
+    flex-shrink: 0 !important;
+}
+
+/* Column links */
+.mega-menu-column a {
+    background: var(--dark-color) !important;
+    color: var(--gray-300) !important;
+    padding: 0.5rem 0 !important;
+    font-size: var(--font-size-sm) !important;
+    display: block !important;
+    text-decoration: none !important;
+    transition: all var(--transition-fast) !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    line-height: 1.4 !important;
+}
+
+.mega-menu-column a:hover {
+    background: rgba(0, 212, 255, 0.1) !important;
+    color: var(--white) !important;
+    transform: translateX(4px) !important;
+    padding-left: var(--spacing-xs) !important;
+}
+
+/* Force grid layout on parent container */
+.nav-item.dropdown .dropdown-menu.mega-menu .mega-menu-content {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+}
+
+/* Ensure no flex properties interfere */
+.mega-menu-content > * {
+    flex: none !important;
+}
+
+/* Mobile responsive - stack columns */
+@media (max-width: 768px) {
+    .mega-menu-content {
+        grid-template-columns: 1fr !important;
+        gap: 0 !important;
+    }
+    
+    .mega-menu-column {
+        border-right: none !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+        border-radius: 0 !important;
+        min-height: auto !important;
+    }
+    
+    .mega-menu-column:last-child {
+        border-bottom: none !important;
+    }
+    
+    .mega-menu-column:first-child {
+        border-top-left-radius: var(--border-radius-md) !important;
+        border-top-right-radius: var(--border-radius-md) !important;
+        border-bottom-left-radius: 0 !important;
+    }
+    
+    .mega-menu-column:last-child {
+        border-bottom-left-radius: var(--border-radius-md) !important;
+        border-bottom-right-radius: var(--border-radius-md) !important;
+        border-top-right-radius: 0 !important;
+    }
+}

@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Penetration Testing by iDigital. Ethical hacking and security testing to identify vulnerabilities and strengthen your application defenses.">
+    <title>Penetration Testing - iDigital | Ethical Hacking & Security Testing</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/mobile-critical.css">
+    <link rel="stylesheet" href="../css/hero-text-fix.css">
+    <link rel="stylesheet" href="../css/spacing-fix.css">
+    <link rel="stylesheet" href="../css/final-fixes.css">
+    <link rel="stylesheet" href="../css/navigation-fix.css">
+    <link rel="stylesheet" href="../css/stats-fix.css">
+    <link rel="stylesheet" href="../css/comprehensive-responsive-fix.css">
+    <link rel="stylesheet" href="../css/footer-text-fix.css">
+    <link rel="stylesheet" href="../css/hero-hover-fix.css">
+    <link rel="stylesheet" href="../css/menu-dropdown-fix.css">
+    <link rel="stylesheet" href="../css/mega-menu-background-fix.css">
+    <link rel="stylesheet" href="../css/mega-menu-layout-fix.css">
+    <link rel="stylesheet" href="../css/mobile-navigation-fix.css">
+    <link rel="stylesheet" href="../css/mega-menu-responsive-fix.css">
+    <link rel="stylesheet" href="../css/mobile-fix.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html" class="logo-text">iDigital</a>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">
+                        Services <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu mega-menu">
+                        <div class="mega-menu-content">
+                            <div class="mega-menu-column">
+                                <h4>Development Services</h4>
+                                <a href="windows-development.html">Windows App Development</a>
+                                <a href="mac-development.html">Mac App Development</a>
+                                <a href="mobile-development.html">Mobile Apps (iOS/Android)</a>
+                                <a href="web-development.html">Web Applications</a>
+                                <a href="backend-development.html">Backend Development</a>
+                                <a href="frontend-development.html">Frontend Development</a>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Infrastructure & Cloud</h4>
+                                <a href="database-solutions.html">Database Solutions</a>
+                                <a href="cloud-services.html">Cloud Services</a>
+                                <a href="devops.html">DevOps & CI/CD</a>
+                                <a href="system-architecture.html">System Architecture</a>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Emerging Technologies</h4>
+                                <a href="ai-services.html">AI Services & ML</a>
+                                <a href="iot-solutions.html">IoT Solutions</a>
+                                <a href="blockchain.html">Blockchain Development</a>
+                                <a href="ar-vr.html">AR/VR Development</a>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Security & Quality</h4>
+                                <a href="secure-coding.html">Secure Coding Practices</a>
+                                <a href="security-audits.html">Security Audits</a>
+                                <a href="penetration-testing.html">Penetration Testing</a>
+                                <a href="code-reviews.html">Code Reviews</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">
+                        Technologies <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="programming-languages.html">Programming Languages</a>
+                        <a href="frameworks.html">Frameworks & Libraries</a>
+                        <a href="databases.html">Databases</a>
+                        <a href="cloud-platforms.html">Cloud Platforms</a>
+                    </div>
+                </div>
+                
+                <a href="industries.html" class="nav-link">Industries</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-cta">
+                <a href="get-quote.html" class="btn btn-primary">Get Quote</a>
+            </div>
+            
+                <a href="get-quote.html" class="btn btn-primary" data-translate="nav-get-quote">Get Quote</a>
+                <div class="nav-item dropdown language-selector">
+                    <a href="#" class="nav-link dropdown-toggle">
+                         EN <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item active" data-lang="en"> English</a>
+                        <a href="#" class="dropdown-item" data-lang="ar"> ???????</a>
+                        <a href="#" class="dropdown-item" data-lang="es"> Espa�ol</a>
+                        <a href="#" class="dropdown-item" data-lang="ru"> ???????</a>
+                        <a href="#" class="dropdown-item" data-lang="tr"> T�rk�e</a>
+                        <a href="#" class="dropdown-item" data-lang="pt"> Portugu�s</a>
+                        <a href="#" class="dropdown-item" data-lang="ka"> ???????</a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="hero-background">
+            <div class="floating-elements">
+                <div class="floating-element" data-speed="0.5"><i class="fas fa-user-secret"></i></div>
+                <div class="floating-element" data-speed="0.8"><i class="fas fa-terminal"></i></div>
+                <div class="floating-element" data-speed="0.3"><i class="fas fa-crosshairs"></i></div>
+                <div class="floating-element" data-speed="0.6"><i class="fas fa-bug"></i></div>
+                <div class="floating-element" data-speed="0.4"><i class="fas fa-unlock-alt"></i></div>
+                <div class="floating-element" data-speed="0.7"><i class="fas fa-skull-crossbones"></i></div>
+                <div class="floating-element" data-speed="0.5"><i class="fas fa-mask"></i></div>
+            </div>
+            <div class="particle-container" id="particles"></div>
+        </div>
+        <div class="container">
+            <div class="page-header-content">
+                <h1 class="hero-animated-bg">Penetration Testing</h1>
+                <p>Ethical hacking and advanced security testing to discover vulnerabilities before malicious attackers do, ensuring robust application security.</p>
+                <div class="breadcrumb">
+                    <a href="../index.html">Home</a>
+                    <span>/</span>
+                    <span>Services</span>
+                    <span>/</span>
+                    <span>Penetration Testing</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Overview -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text slide-in-left">
+                    <h2>Ethical Hacking Excellence</h2>
+                    <p>Our certified ethical hackers conduct comprehensive penetration testing to identify security vulnerabilities in your applications, networks, and infrastructure. We simulate real-world attacks to uncover weaknesses before malicious actors can exploit them.</p>
+                    <p>Using advanced techniques and industry-standard methodologies like OWASP Testing Guide and NIST frameworks, we provide thorough security assessments with detailed exploitation scenarios and practical remediation strategies.</p>
+                    <div class="service-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-user-secret"></i>
+                            <span>Certified Experts</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-crosshairs"></i>
+                            <span>Real Attack Simulation</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Zero False Positives</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image scale-in">
+                    <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=500&h=400&fit=crop" alt="Penetration Testing" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testing Types -->
+    <section class="technologies">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Penetration Testing Services</h2>
+                <p class="section-subtitle">Comprehensive security testing across all attack vectors</p>
+            </div>
+            
+            <div class="tech-categories">
+                <div class="tech-category pentest-card bounce-in" data-category="web">
+                    <div class="pentest-icon pulse-animation">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Web Application Testing</h3>
+                    <p>Comprehensive testing of web applications for OWASP Top 10 and advanced vulnerabilities.</p>
+                    <div class="attack-vector">
+                        <div class="vector-step">Recon</div>
+                        <div class="vector-arrow">🎯</div>
+                        <div class="vector-step active">Exploit</div>
+                        <div class="vector-arrow">🎯</div>
+                        <div class="vector-step">Report</div>
+                    </div>
+                    <div class="attack-methods">
+                        <span>SQL Injection</span>
+                        <span>XSS</span>
+                        <span>CSRF</span>
+                        <span>Auth Bypass</span>
+                    </div>
+                </div>
+                
+                <div class="tech-category pentest-card slide-in-left" data-category="network">
+                    <div class="pentest-icon glow-effect">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Network Penetration</h3>
+                    <p>Internal and external network testing to identify infrastructure vulnerabilities.</p>
+                    <div class="attack-vector">
+                        <div class="vector-step">Scan</div>
+                        <div class="vector-arrow">🔍</div>
+                        <div class="vector-step active">Infiltrate</div>
+                        <div class="vector-arrow">🔍</div>
+                        <div class="vector-step">Escalate</div>
+                    </div>
+                    <div class="attack-methods">
+                        <span>Port Scanning</span>
+                        <span>Service Enum</span>
+                        <span>Lateral Movement</span>
+                        <span>Privilege Escalation</span>
+                    </div>
+                </div>
+                
+                <div class="tech-category pentest-card slide-in-right" data-category="wireless">
+                    <div class="pentest-icon rotate-in">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>Wireless Security</h3>
+                    <p>WiFi security assessment and wireless infrastructure penetration testing.</p>
+                    <div class="attack-vector">
+                        <div class="vector-step">Monitor</div>
+                        <div class="vector-arrow">📡</div>
+                        <div class="vector-step active">Crack</div>
+                        <div class="vector-arrow">📡</div>
+                        <div class="vector-step">Access</div>
+                    </div>
+                    <div class="attack-methods">
+                        <span>WPA/WEP Cracking</span>
+                        <span>Evil Twin</span>
+                        <span>Rogue AP</span>
+                        <span>Deauth Attacks</span>
+                    </div>
+                </div>
+                
+                <div class="tech-category pentest-card fade-in-up" data-category="social">
+                    <div class="pentest-icon pulse-animation">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Social Engineering</h3>
+                    <p>Human factor testing including phishing campaigns and physical security assessments.</p>
+                    <div class="attack-vector">
+                        <div class="vector-step">Research</div>
+                        <div class="vector-arrow">🎭</div>
+                        <div class="vector-step active">Phish</div>
+                        <div class="vector-arrow">🎭</div>
+                        <div class="vector-step">Breach</div>
+                    </div>
+                    <div class="attack-methods">
+                        <span>Phishing</span>
+                        <span>Vishing</span>
+                        <span>Physical Access</span>
+                        <span>Tailgating</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testing Features -->
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Penetration Testing Excellence</h2>
+                <p class="section-subtitle">Advanced security testing with real-world attack simulation</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card bounce-in">
+                    <div class="feature-icon glow-effect">
+                        <i class="fas fa-crosshairs"></i>
+                    </div>
+                    <h3>Advanced Exploitation</h3>
+                    <p>Custom exploit development and advanced attack techniques to thoroughly test your security defenses.</p>
+                </div>
+                
+                <div class="feature-card slide-in-left">
+                    <div class="feature-icon pulse-animation">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h3>Attack Path Analysis</h3>
+                    <p>Comprehensive mapping of potential attack paths and multi-stage exploitation scenarios.</p>
+                </div>
+                
+                <div class="feature-card slide-in-right">
+                    <div class="feature-icon rotate-in">
+                        <i class="fas fa-eye-slash"></i>
+                    </div>
+                    <h3>Zero-Day Discovery</h3>
+                    <p>Identification of previously unknown vulnerabilities through advanced testing methodologies.</p>
+                </div>
+                
+                <div class="feature-card scale-in">
+                    <div class="feature-icon glow-effect">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h3>Detailed Reporting</h3>
+                    <p>Comprehensive reports with proof-of-concept exploits and step-by-step remediation guidance.</p>
+                </div>
+                
+                <div class="feature-card fade-in-up">
+                    <div class="feature-icon pulse-animation">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Real-Time Testing</h3>
+                    <p>Live testing environments with immediate feedback and collaborative security assessment.</p>
+                </div>
+                
+                <div class="feature-card slide-in-left">
+                    <div class="feature-icon rotate-in">
+                        <i class="fas fa-redo-alt"></i>
+                    </div>
+                    <h3>Continuous Testing</h3>
+                    <p>Ongoing penetration testing programs to ensure continuous security validation and improvement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testing Methodologies */
+    <section class="about-section" style="background: var(--light-color);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Penetration Testing Methodology</h2>
+                <p class="section-subtitle">Systematic approach to ethical hacking and security testing</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="process-step bounce-in">
+                    <div class="step-number">01</div>
+                    <h3>Reconnaissance</h3>
+                    <p>Information gathering, target enumeration, and attack surface mapping to understand the testing scope.</p>
+                </div>
+                
+                <div class="process-step slide-in-left">
+                    <div class="step-number">02</div>
+                    <h3>Vulnerability Assessment</h3>
+                    <p>Comprehensive vulnerability scanning and manual testing to identify potential security weaknesses.</p>
+                </div>
+                
+                <div class="process-step slide-in-right">
+                    <div class="step-number">03</div>
+                    <h3>Exploitation</h3>
+                    <p>Active exploitation of vulnerabilities to demonstrate real-world attack scenarios and potential impact.</p>
+                </div>
+                
+                <div class="process-step scale-in">
+                    <div class="step-number">04</div>
+                    <h3>Post-Exploitation</h3>
+                    <p>Assessment of potential damage, data exfiltration, and lateral movement possibilities with detailed reporting.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready for Penetration Testing?</h2>
+                <p>Discover vulnerabilities before attackers do with our comprehensive ethical hacking and penetration testing services.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-lg">Schedule Pen Test</a>
+                    <a href="get-quote.html" class="btn btn-secondary btn-lg">Get Testing Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="../assets/images/idigital-logo-white.svg" alt="iDigital">
+                    </div>
+                    <p>Transforming businesses through secure, innovative digital solutions. Your trusted technology partner for the digital age.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer-services">Services</h4>
+                    <ul>
+                        <li><a href="mobile-development.html">Mobile Development</a></li>
+                        <li><a href="web-development.html">Web Applications</a></li>
+                        <li><a href="ai-services.html">AI Services</a></li>
+                        <li><a href="cloud-services.html">Cloud Solutions</a></li>
+                        <li><a href="security-audits.html">Security Auditing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer-technologies">Technologies</h4>
+                    <ul>
+                        <li><a href="programming-languages.html">Programming Languages</a></li>
+                        <li><a href="frameworks.html">Frameworks</a></li>
+                        <li><a href="databases.html">Databases</a></li>
+                        <li><a href="cloud-platforms.html">Cloud Platforms</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer-company">Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html"><span data-translate="footer-privacy">Privacy Policy</span></a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +1 504 342 9109</p>
+                        <p><i class="fas fa-envelope"></i> software@idigitalusa.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 1851 Rousseau St, New Orleans LA 70130</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 iDigital. All rights reserved. | <a href="privacy.html"><span data-translate="footer-privacy">Privacy Policy</span></a> | <a href="terms.html"><span data-translate="footer-terms">Terms of Service</span></a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+    <script src="../js/animations.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

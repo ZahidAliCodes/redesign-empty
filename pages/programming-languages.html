@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Programming Languages expertise by iDigital. Expert development in JavaScript, Python, Java, C#, Swift, Kotlin, and more modern languages.">
+    <title>Programming Languages - iDigital | Multi-Language Development</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/mobile-critical.css">
+    <link rel="stylesheet" href="../css/hero-text-fix.css">
+    <link rel="stylesheet" href="../css/spacing-fix.css">
+    <link rel="stylesheet" href="../css/final-fixes.css">
+    <link rel="stylesheet" href="../css/navigation-fix.css">
+    <link rel="stylesheet" href="../css/stats-fix.css">
+    <link rel="stylesheet" href="../css/comprehensive-responsive-fix.css">
+    <link rel="stylesheet" href="../css/footer-text-fix.css">
+    <link rel="stylesheet" href="../css/hero-hover-fix.css">
+    <link rel="stylesheet" href="../css/menu-dropdown-fix.css">
+    <link rel="stylesheet" href="../css/mega-menu-background-fix.css">
+    <link rel="stylesheet" href="../css/mega-menu-layout-fix.css">
+    <link rel="stylesheet" href="../css/mobile-navigation-fix.css">
+    <link rel="stylesheet" href="../css/mega-menu-responsive-fix.css">
+    <link rel="stylesheet" href="../css/mobile-fix.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html" class="logo-text">iDigital</a>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">
+                        Services <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu mega-menu">
+                        <div class="mega-menu-content">
+                            <div class="mega-menu-column">
+                                <h4>Development Services</h4>
+                                <a href="windows-development.html">Windows App Development</a>
+                                <a href="mac-development.html">Mac App Development</a>
+                                <a href="mobile-development.html">Mobile Apps (iOS/Android)</a>
+                                <a href="web-development.html">Web Applications</a>
+                                <a href="backend-development.html">Backend Development</a>
+                                <a href="frontend-development.html">Frontend Development</a>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Infrastructure & Cloud</h4>
+                                <a href="database-solutions.html">Database Solutions</a>
+                                <a href="cloud-services.html">Cloud Services</a>
+                                <a href="devops.html">DevOps & CI/CD</a>
+                                <a href="system-architecture.html">System Architecture</a>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Emerging Technologies</h4>
+                                <a href="ai-services.html">AI Services & ML</a>
+                                <a href="iot-solutions.html">IoT Solutions</a>
+                                <a href="blockchain.html">Blockchain Development</a>
+                                <a href="ar-vr.html">AR/VR Development</a>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Security & Quality</h4>
+                                <a href="secure-coding.html">Secure Coding Practices</a>
+                                <a href="security-audits.html">Security Audits</a>
+                                <a href="penetration-testing.html">Penetration Testing</a>
+                                <a href="code-reviews.html">Code Reviews</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">
+                        Technologies <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="programming-languages.html">Programming Languages</a>
+                        <a href="frameworks.html">Frameworks & Libraries</a>
+                        <a href="databases.html">Databases</a>
+                        <a href="cloud-platforms.html">Cloud Platforms</a>
+                    </div>
+                </div>
+                
+                <a href="industries.html" class="nav-link">Industries</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-cta">
+                <a href="get-quote.html" class="btn btn-primary">Get Quote</a>
+            </div>
+            
+                <a href="get-quote.html" class="btn btn-primary" data-translate="nav-get-quote">Get Quote</a>
+                <div class="nav-item dropdown language-selector">
+                    <a href="#" class="nav-link dropdown-toggle">
+                         EN <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item active" data-lang="en"> English</a>
+                        <a href="#" class="dropdown-item" data-lang="ar"> ???????</a>
+                        <a href="#" class="dropdown-item" data-lang="es"> Español</a>
+                        <a href="#" class="dropdown-item" data-lang="ru"> ???????</a>
+                        <a href="#" class="dropdown-item" data-lang="tr"> Türkçe</a>
+                        <a href="#" class="dropdown-item" data-lang="pt"> Português</a>
+                        <a href="#" class="dropdown-item" data-lang="ka"> ???????</a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="hero-background">
+            <div class="floating-elements">
+                <div class="floating-element" data-speed="0.5"><i class="fab fa-js"></i></div>
+                <div class="floating-element" data-speed="0.8"><i class="fab fa-python"></i></div>
+                <div class="floating-element" data-speed="0.3"><i class="fab fa-java"></i></div>
+                <div class="floating-element" data-speed="0.6"><i class="fab fa-swift"></i></div>
+                <div class="floating-element" data-speed="0.4"><i class="fas fa-hashtag"></i></div>
+                <div class="floating-element" data-speed="0.7"><i class="fas fa-code"></i></div>
+                <div class="floating-element" data-speed="0.5"><i class="fab fa-rust"></i></div>
+            </div>
+            <div class="particle-container" id="particles"></div>
+        </div>
+        <div class="container">
+            <div class="page-header-content">
+                <h1 class="hero-animated-bg">Programming Languages</h1>
+                <p>Expert development across modern programming languages with deep knowledge of best practices, design patterns, and performance optimization.</p>
+                <div class="breadcrumb">
+                    <a href="../index.html">Home</a>
+                    <span>/</span>
+                    <span>Technologies</span>
+                    <span>/</span>
+                    <span>Programming Languages</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages Overview -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text slide-in-bottom">
+                    <h2>Multi-Language Mastery</h2>
+                    <p>Our development team has extensive expertise across a wide range of programming languages, from traditional enterprise languages to cutting-edge modern languages. We select the right language for each project based on performance requirements, ecosystem maturity, and long-term maintainability.</p>
+                    <p>Whether you need high-performance systems programming, rapid web development, mobile applications, or data science solutions, we have the language expertise to deliver optimal results for your specific use case.</p>
+                    <div class="service-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-code"></i>
+                            <span>10+ Languages</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-rocket"></i>
+                            <span>Performance Optimized</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Best Practices</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image rotate-in">
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&h=400&fit=crop" alt="Programming Languages" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages Grid -->
+    <section class="technologies">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Language Expertise</h2>
+                <p class="section-subtitle">Comprehensive knowledge across diverse programming paradigms</p>
+            </div>
+            
+            <div class="tech-categories">
+                <div class="tech-category language-card fade-in-up" data-category="javascript">
+                    <div class="language-icon pulse-animation">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>Modern ES6+ development, TypeScript, Node.js backend, and advanced frontend frameworks.</p>
+                    <div class="language-features">
+                        <span>ES6+</span>
+                        <span>TypeScript</span>
+                        <span>Node.js</span>
+                        <span>Async/Await</span>
+                    </div>
+                    <div class="language-stats">
+                        <div class="stat">
+                            <span class="stat-label">Experience</span>
+                            <span class="stat-value">8+ Years</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Projects</span>
+                            <span class="stat-value">150+</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-category language-card slide-in-left" data-category="python">
+                    <div class="language-icon glow-effect">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python</h3>
+                    <p>Data science, machine learning, web development with Django/Flask, and automation scripts.</p>
+                    <div class="language-features">
+                        <span>Django</span>
+                        <span>Flask</span>
+                        <span>NumPy</span>
+                        <span>TensorFlow</span>
+                    </div>
+                    <div class="language-stats">
+                        <div class="stat">
+                            <span class="stat-label">Experience</span>
+                            <span class="stat-value">7+ Years</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Projects</span>
+                            <span class="stat-value">120+</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-category language-card slide-in-right" data-category="java">
+                    <div class="language-icon rotate-in">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <h3>Java</h3>
+                    <p>Enterprise applications, Spring ecosystem, microservices, and Android development.</p>
+                    <div class="language-features">
+                        <span>Spring Boot</span>
+                        <span>Microservices</span>
+                        <span>JPA/Hibernate</span>
+                        <span>Maven/Gradle</span>
+                    </div>
+                    <div class="language-stats">
+                        <div class="stat">
+                            <span class="stat-label">Experience</span>
+                            <span class="stat-value">10+ Years</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Projects</span>
+                            <span class="stat-value">200+</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-category language-card bounce-in" data-category="csharp">
+                    <div class="language-icon pulse-animation">
+                        <i class="fas fa-hashtag"></i>
+                    </div>
+                    <h3>C#</h3>
+                    <p>.NET ecosystem, ASP.NET Core, desktop applications, and cloud-native development.</p>
+                    <div class="language-features">
+                        <span>.NET Core</span>
+                        <span>ASP.NET</span>
+                        <span>Entity Framework</span>
+                        <span>LINQ</span>
+                    </div>
+                    <div class="language-stats">
+                        <div class="stat">
+                            <span class="stat-label">Experience</span>
+                            <span class="stat-value">9+ Years</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Projects</span>
+                            <span class="stat-value">180+</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-category language-card scale-in" data-category="swift">
+                    <div class="language-icon glow-effect">
+                        <i class="fab fa-swift"></i>
+                    </div>
+                    <h3>Swift</h3>
+                    <p>iOS and macOS development, SwiftUI, Combine framework, and server-side Swift.</p>
+                    <div class="language-features">
+                        <span>SwiftUI</span>
+                        <span>Combine</span>
+                        <span>Core Data</span>
+                        <span>UIKit</span>
+                    </div>
+                    <div class="language-stats">
+                        <div class="stat">
+                            <span class="stat-label">Experience</span>
+                            <span class="stat-value">6+ Years</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Projects</span>
+                            <span class="stat-value">80+</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-category language-card fade-in-up" data-category="kotlin">
+                    <div class="language-icon rotate-in">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Kotlin</h3>
+                    <p>Android development, multiplatform projects, and server-side development with Spring.</p>
+                    <div class="language-features">
+                        <span>Android</span>
+                        <span>Multiplatform</span>
+                        <span>Coroutines</span>
+                        <span>Spring</span>
+                    </div>
+                    <div class="language-stats">
+                        <div class="stat">
+                            <span class="stat-label">Experience</span>
+                            <span class="stat-value">5+ Years</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Projects</span>
+                            <span class="stat-value">90+</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-category language-card slide-in-left" data-category="go">
+                    <div class="language-icon pulse-animation">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Go</h3>
+                    <p>High-performance backend services, microservices, and cloud-native applications.</p>
+                    <div class="language-features">
+                        <span>Goroutines</span>
+                        <span>Microservices</span>
+                        <span>Docker</span>
+                        <span>Kubernetes</span>
+                    </div>
+                    <div class="language-stats">
+                        <div class="stat">
+                            <span class="stat-label">Experience</span>
+                            <span class="stat-value">4+ Years</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Projects</span>
+                            <span class="stat-value">60+</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-category language-card slide-in-right" data-category="rust">
+                    <div class="language-icon glow-effect">
+                        <i class="fab fa-rust"></i>
+                    </div>
+                    <h3>Rust</h3>
+                    <p>System programming, WebAssembly, blockchain development, and high-performance applications.</p>
+                    <div class="language-features">
+                        <span>WebAssembly</span>
+                        <span>Async/Await</span>
+                        <span>Cargo</span>
+                        <span>Memory Safety</span>
+                    </div>
+                    <div class="language-stats">
+                        <div class="stat">
+                            <span class="stat-label">Experience</span>
+                            <span class="stat-value">3+ Years</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Projects</span>
+                            <span class="stat-value">40+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Language Selection Criteria -->
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Language Selection Expertise</h2>
+                <p class="section-subtitle">Choosing the right language for optimal project outcomes</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card bounce-in">
+                    <div class="feature-icon glow-effect">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Performance Analysis</h3>
+                    <p>Deep understanding of language performance characteristics, memory management, and optimization techniques for different use cases.</p>
+                </div>
+                
+                <div class="feature-card slide-in-left">
+                    <div class="feature-icon pulse-animation">
+                        <i class="fas fa-puzzle-piece"></i>
+                    </div>
+                    <h3>Ecosystem Evaluation</h3>
+                    <p>Comprehensive analysis of library ecosystems, community support, and tooling availability for informed language selection.</p>
+                </div>
+                
+                <div class="feature-card slide-in-right">
+                    <div class="feature-icon rotate-in">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Scalability Planning</h3>
+                    <p>Forward-thinking approach to language choice considering long-term scalability, maintenance, and team expertise requirements.</p>
+                </div>
+                
+                <div class="feature-card scale-in">
+                    <div class="feature-icon glow-effect">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Security Considerations</h3>
+                    <p>Language-specific security best practices, vulnerability patterns, and secure coding standards for each programming language.</p>
+                </div>
+                
+                <div class="feature-card fade-in-up">
+                    <div class="feature-icon pulse-animation">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Team Expertise</h3>
+                    <p>Matching language choice with team capabilities while providing training and knowledge transfer for optimal development efficiency.</p>
+                </div>
+                
+                <div class="feature-card slide-in-left">
+                    <div class="feature-icon rotate-in">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Development Speed</h3>
+                    <p>Balancing development velocity with code quality, considering language productivity features and development tooling.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Need Expert Language Consultation?</h2>
+                <p>Let our language experts help you choose the perfect programming language stack for your project requirements.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-lg">Consult Our Experts</a>
+                    <a href="get-quote.html" class="btn btn-secondary btn-lg">Get Technology Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="../assets/images/idigital-logo-white.svg" alt="iDigital">
+                    </div>
+                    <p>Transforming businesses through secure, innovative digital solutions. Your trusted technology partner for the digital age.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer-services">Services</h4>
+                    <ul>
+                        <li><a href="mobile-development.html">Mobile Development</a></li>
+                        <li><a href="web-development.html">Web Applications</a></li>
+                        <li><a href="ai-services.html">AI Services</a></li>
+                        <li><a href="cloud-services.html">Cloud Solutions</a></li>
+                        <li><a href="security-audits.html">Security Auditing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer-technologies">Technologies</h4>
+                    <ul>
+                        <li><a href="programming-languages.html">Programming Languages</a></li>
+                        <li><a href="frameworks.html">Frameworks</a></li>
+                        <li><a href="databases.html">Databases</a></li>
+                        <li><a href="cloud-platforms.html">Cloud Platforms</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer-company">Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html"><span data-translate="footer-privacy">Privacy Policy</span></a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +1 504 342 9109</p>
+                        <p><i class="fas fa-envelope"></i> software@idigitalusa.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 1851 Rousseau St, New Orleans LA 70130</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 iDigital. All rights reserved. | <a href="privacy.html"><span data-translate="footer-privacy">Privacy Policy</span></a> | <a href="terms.html"><span data-translate="footer-terms">Terms of Service</span></a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+    <script src="../js/animations.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

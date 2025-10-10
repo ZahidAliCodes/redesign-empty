@@ -1,0 +1,76 @@
+/* STATISTICS TEXT COLOR FIXES */
+
+/* HERO STATISTICS - FORCE WHITE TEXT */
+.hero-stats {
+    color: var(--white) !important;
+}
+
+.hero-stats .stat {
+    color: var(--white) !important;
+    text-align: center;
+}
+
+.hero-stats .stat-number {
+    color: var(--white) !important;
+    font-weight: 700 !important;
+    font-size: clamp(1.5rem, 3vw, 2.5rem) !important;
+    display: block !important;
+    margin-bottom: 0.25rem !important;
+}
+
+.hero-stats .stat-label {
+    color: var(--white) !important;
+    font-weight: 500 !important;
+    font-size: clamp(0.875rem, 1.5vw, 1rem) !important;
+    display: block !important;
+    opacity: 0.9 !important;
+}
+
+/* STATISTICS IN OTHER SECTIONS */
+.stats-section .stat-number,
+.about-section .stat-number {
+    color: var(--white) !important;
+    font-weight: 700 !important;
+}
+
+.stats-section .stat-label,
+.about-section .stat-label {
+    color: var(--white) !important;
+    font-weight: 500 !important;
+}
+
+/* ENSURE ALL STATISTICS ARE WHITE */
+.stat-item .stat-number,
+.stat-item .stat-label {
+    color: var(--white) !important;
+}
+
+/* OVERRIDE ANY CONFLICTING STYLES */
+.hero .stat,
+.hero .stat *,
+.hero-stats .stat,
+.hero-stats .stat * {
+    color: var(--white) !important;
+}
+
+/* RESPONSIVE STATISTICS */
+@media (max-width: 768px) {
+    .hero-stats {
+        flex-direction: column !important;
+        gap: var(--spacing-md) !important;
+        margin-top: var(--spacing-lg) !important;
+    }
+    
+    .hero-stats .stat {
+        flex: none !important;
+        width: 100% !important;
+    }
+    
+    .hero-stats .stat-number {
+        font-size: clamp(1.25rem, 4vw, 2rem) !important;
+    }
+    
+    .hero-stats .stat-label {
+        font-size: clamp(0.75rem, 2vw, 0.875rem) !important;
+    }
+}

@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Code Reviews by iDigital. Expert code analysis, quality assurance, and security reviews to improve code quality and maintainability.">
+    <title>Code Reviews - iDigital | Expert Code Analysis & Quality Assurance</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/mobile-critical.css">
+    <link rel="stylesheet" href="../css/hero-text-fix.css">
+    <link rel="stylesheet" href="../css/spacing-fix.css">
+    <link rel="stylesheet" href="../css/final-fixes.css">
+    <link rel="stylesheet" href="../css/navigation-fix.css">
+    <link rel="stylesheet" href="../css/stats-fix.css">
+    <link rel="stylesheet" href="../css/comprehensive-responsive-fix.css">
+    <link rel="stylesheet" href="../css/footer-text-fix.css">
+    <link rel="stylesheet" href="../css/hero-hover-fix.css">
+    <link rel="stylesheet" href="../css/menu-dropdown-fix.css">
+    <link rel="stylesheet" href="../css/mega-menu-background-fix.css">
+    <link rel="stylesheet" href="../css/mega-menu-layout-fix.css">
+    <link rel="stylesheet" href="../css/mobile-navigation-fix.css">
+    <link rel="stylesheet" href="../css/mega-menu-responsive-fix.css">
+    <link rel="stylesheet" href="../css/mobile-fix.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html" class="logo-text">iDigital</a>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">
+                        Services <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu mega-menu">
+                        <div class="mega-menu-content">
+                            <div class="mega-menu-column">
+                                <h4>Development Services</h4>
+                                <a href="windows-development.html">Windows App Development</a>
+                                <a href="mac-development.html">Mac App Development</a>
+                                <a href="mobile-development.html">Mobile Apps (iOS/Android)</a>
+                                <a href="web-development.html">Web Applications</a>
+                                <a href="backend-development.html">Backend Development</a>
+                                <a href="frontend-development.html">Frontend Development</a>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Infrastructure & Cloud</h4>
+                                <a href="database-solutions.html">Database Solutions</a>
+                                <a href="cloud-services.html">Cloud Services</a>
+                                <a href="devops.html">DevOps & CI/CD</a>
+                                <a href="system-architecture.html">System Architecture</a>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Emerging Technologies</h4>
+                                <a href="ai-services.html">AI Services & ML</a>
+                                <a href="iot-solutions.html">IoT Solutions</a>
+                                <a href="blockchain.html">Blockchain Development</a>
+                                <a href="ar-vr.html">AR/VR Development</a>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Security & Quality</h4>
+                                <a href="secure-coding.html">Secure Coding Practices</a>
+                                <a href="security-audits.html">Security Audits</a>
+                                <a href="penetration-testing.html">Penetration Testing</a>
+                                <a href="code-reviews.html">Code Reviews</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">
+                        Technologies <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="programming-languages.html">Programming Languages</a>
+                        <a href="frameworks.html">Frameworks & Libraries</a>
+                        <a href="databases.html">Databases</a>
+                        <a href="cloud-platforms.html">Cloud Platforms</a>
+                    </div>
+                </div>
+                
+                <a href="industries.html" class="nav-link">Industries</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-cta">
+                <a href="get-quote.html" class="btn btn-primary">Get Quote</a>
+            </div>
+            
+                <a href="get-quote.html" class="btn btn-primary" data-translate="nav-get-quote">Get Quote</a>
+                <div class="nav-item dropdown language-selector">
+                    <a href="#" class="nav-link dropdown-toggle">
+                         EN <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item active" data-lang="en"> English</a>
+                        <a href="#" class="dropdown-item" data-lang="ar"> ???????</a>
+                        <a href="#" class="dropdown-item" data-lang="es"> Espa�ol</a>
+                        <a href="#" class="dropdown-item" data-lang="ru"> ???????</a>
+                        <a href="#" class="dropdown-item" data-lang="tr"> T�rk�e</a>
+                        <a href="#" class="dropdown-item" data-lang="pt"> Portugu�s</a>
+                        <a href="#" class="dropdown-item" data-lang="ka"> ???????</a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="hero-background">
+            <div class="floating-elements">
+                <div class="floating-element" data-speed="0.5"><i class="fas fa-code"></i></div>
+                <div class="floating-element" data-speed="0.8"><i class="fas fa-search"></i></div>
+                <div class="floating-element" data-speed="0.3"><i class="fas fa-clipboard-check"></i></div>
+                <div class="floating-element" data-speed="0.6"><i class="fas fa-bug"></i></div>
+                <div class="floating-element" data-speed="0.4"><i class="fas fa-star"></i></div>
+                <div class="floating-element" data-speed="0.7"><i class="fas fa-thumbs-up"></i></div>
+                <div class="floating-element" data-speed="0.5"><i class="fas fa-medal"></i></div>
+            </div>
+            <div class="particle-container" id="particles"></div>
+        </div>
+        <div class="container">
+            <div class="page-header-content">
+                <h1 class="hero-animated-bg">Code Reviews</h1>
+                <p>Expert code analysis and quality assurance to improve code maintainability, security, and performance through comprehensive peer reviews.</p>
+                <div class="breadcrumb">
+                    <a href="../index.html">Home</a>
+                    <span>/</span>
+                    <span>Services</span>
+                    <span>/</span>
+                    <span>Code Reviews</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Overview -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text rotate-in">
+                    <h2>Code Quality Excellence</h2>
+                    <p>Our expert code review services ensure your codebase maintains the highest standards of quality, security, and maintainability. Our senior developers conduct thorough analysis using both automated tools and manual inspection to identify improvements.</p>
+                    <p>From architecture review to line-by-line analysis, we provide comprehensive feedback on code quality, performance optimization, security vulnerabilities, and adherence to industry best practices and coding standards.</p>
+                    <div class="service-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-star"></i>
+                            <span>Quality Assurance</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Security Focus</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Performance Optimization</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image slide-in-left">
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&h=400&fit=crop" alt="Code Reviews" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Review Types -->
+    <section class="technologies">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Code Review Services</h2>
+                <p class="section-subtitle">Comprehensive code analysis across all aspects of software quality</p>
+            </div>
+            
+            <div class="tech-categories">
+                <div class="tech-category review-card bounce-in" data-category="quality">
+                    <div class="review-icon pulse-animation">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Quality Assessment</h3>
+                    <p>Comprehensive code quality analysis focusing on maintainability and best practices.</p>
+                    <div class="review-flow">
+                        <div class="flow-step">Analyze</div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-step active">Review</div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-step">Improve</div>
+                    </div>
+                    <div class="review-criteria">
+                        <span>Code Style</span>
+                        <span>Readability</span>
+                        <span>Maintainability</span>
+                        <span>Documentation</span>
+                    </div>
+                </div>
+                
+                <div class="tech-category review-card slide-in-left" data-category="security">
+                    <div class="review-icon glow-effect">
+                        <i class="fas fa-shield-virus"></i>
+                    </div>
+                    <h3>Security Review</h3>
+                    <p>Security-focused code analysis to identify vulnerabilities and security weaknesses.</p>
+                    <div class="review-flow">
+                        <div class="flow-step">Scan</div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-step active">Validate</div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-step">Secure</div>
+                    </div>
+                    <div class="review-criteria">
+                        <span>OWASP Top 10</span>
+                        <span>Input Validation</span>
+                        <span>Auth/AuthZ</span>
+                        <span>Data Protection</span>
+                    </div>
+                </div>
+                
+                <div class="tech-category review-card slide-in-right" data-category="performance">
+                    <div class="review-icon rotate-in">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Performance Review</h3>
+                    <p>Performance analysis and optimization recommendations for efficient code execution.</p>
+                    <div class="review-flow">
+                        <div class="flow-step">Profile</div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-step active">Optimize</div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-step">Benchmark</div>
+                    </div>
+                    <div class="review-criteria">
+                        <span>Time Complexity</span>
+                        <span>Memory Usage</span>
+                        <span>Database Queries</span>
+                        <span>Caching</span>
+                    </div>
+                </div>
+                
+                <div class="tech-category review-card fade-in-up" data-category="architecture">
+                    <div class="review-icon pulse-animation">
+                        <i class="fas fa-sitemap"></i>
+                    </div>
+                    <h3>Architecture Review</h3>
+                    <p>High-level architecture analysis and design pattern evaluation for scalable systems.</p>
+                    <div class="review-flow">
+                        <div class="flow-step">Design</div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-step active">Evaluate</div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-step">Refactor</div>
+                    </div>
+                    <div class="review-criteria">
+                        <span>Design Patterns</span>
+                        <span>SOLID Principles</span>
+                        <span>Scalability</span>
+                        <span>Coupling</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Review Features -->
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Code Review Excellence</h2>
+                <p class="section-subtitle">Thorough analysis and actionable improvement recommendations</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card bounce-in">
+                    <div class="feature-icon glow-effect">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    <h3>Detailed Analysis</h3>
+                    <p>Line-by-line code review with comprehensive analysis of logic, structure, and implementation quality.</p>
+                </div>
+                
+                <div class="feature-card slide-in-left">
+                    <div class="feature-icon pulse-animation">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Automated Tools</h3>
+                    <p>Integration of static analysis tools, linters, and quality metrics for comprehensive automated assessment.</p>
+                </div>
+                
+                <div class="feature-card slide-in-right">
+                    <div class="feature-icon rotate-in">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Best Practices</h3>
+                    <p>Evaluation against industry standards, coding conventions, and framework-specific best practices.</p>
+                </div>
+                
+                <div class="feature-card scale-in">
+                    <div class="feature-icon glow-effect">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Improvement Suggestions</h3>
+                    <p>Actionable recommendations with code examples and refactoring suggestions for immediate implementation.</p>
+                </div>
+                
+                <div class="feature-card fade-in-up">
+                    <div class="feature-icon pulse-animation">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Team Training</h3>
+                    <p>Knowledge transfer sessions and code review workshops to improve team coding standards and practices.</p>
+                </div>
+                
+                <div class="feature-card slide-in-left">
+                    <div class="feature-icon rotate-in">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h3>Comprehensive Reports</h3>
+                    <p>Detailed review reports with prioritized findings, metrics, and progress tracking for continuous improvement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Review Process */
+    <section class="about-section" style="background: var(--light-color);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Code Review Process</h2>
+                <p class="section-subtitle">Systematic approach to comprehensive code quality assessment</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="process-step bounce-in">
+                    <div class="step-number">01</div>
+                    <h3>Initial Assessment</h3>
+                    <p>Codebase analysis, architecture overview, and review scope definition based on project requirements and goals.</p>
+                </div>
+                
+                <div class="process-step slide-in-left">
+                    <div class="step-number">02</div>
+                    <h3>Detailed Review</h3>
+                    <p>Comprehensive code analysis using automated tools and manual inspection across quality, security, and performance dimensions.</p>
+                </div>
+                
+                <div class="process-step slide-in-right">
+                    <div class="step-number">03</div>
+                    <h3>Findings Report</h3>
+                    <p>Detailed documentation of findings with prioritized recommendations, code examples, and improvement strategies.</p>
+                </div>
+                
+                <div class="process-step scale-in">
+                    <div class="step-number">04</div>
+                    <h3>Implementation Support</h3>
+                    <p>Guidance for implementing recommendations, follow-up reviews, and establishment of ongoing quality processes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready for Expert Code Review?</h2>
+                <p>Improve your code quality, security, and maintainability with our comprehensive code review services.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-lg">Schedule Code Review</a>
+                    <a href="get-quote.html" class="btn btn-secondary btn-lg">Get Review Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="../assets/images/idigital-logo-white.svg" alt="iDigital">
+                    </div>
+                    <p>Transforming businesses through secure, innovative digital solutions. Your trusted technology partner for the digital age.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer-services">Services</h4>
+                    <ul>
+                        <li><a href="mobile-development.html">Mobile Development</a></li>
+                        <li><a href="web-development.html">Web Applications</a></li>
+                        <li><a href="ai-services.html">AI Services</a></li>
+                        <li><a href="cloud-services.html">Cloud Solutions</a></li>
+                        <li><a href="security-audits.html">Security Auditing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer-technologies">Technologies</h4>
+                    <ul>
+                        <li><a href="programming-languages.html">Programming Languages</a></li>
+                        <li><a href="frameworks.html">Frameworks</a></li>
+                        <li><a href="databases.html">Databases</a></li>
+                        <li><a href="cloud-platforms.html">Cloud Platforms</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer-company">Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html"><span data-translate="footer-privacy">Privacy Policy</span></a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +1 504 342 9109</p>
+                        <p><i class="fas fa-envelope"></i> software@idigitalusa.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 1851 Rousseau St, New Orleans LA 70130</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 iDigital. All rights reserved. | <a href="privacy.html"><span data-translate="footer-privacy">Privacy Policy</span></a> | <a href="terms.html"><span data-translate="footer-terms">Terms of Service</span></a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+    <script src="../js/animations.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

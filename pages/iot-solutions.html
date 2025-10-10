@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IoT Solutions by iDigital. Build connected device ecosystems with smart sensors, edge computing, and real-time data analytics.">
+    <title>IoT Solutions - iDigital | Connected Device Development</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/mobile-critical.css">
+    <link rel="stylesheet" href="../css/hero-text-fix.css">
+    <link rel="stylesheet" href="../css/spacing-fix.css">
+    <link rel="stylesheet" href="../css/final-fixes.css">
+    <link rel="stylesheet" href="../css/navigation-fix.css">
+    <link rel="stylesheet" href="../css/stats-fix.css">
+    <link rel="stylesheet" href="../css/comprehensive-responsive-fix.css">
+    <link rel="stylesheet" href="../css/footer-text-fix.css">
+    <link rel="stylesheet" href="../css/hero-hover-fix.css">
+    <link rel="stylesheet" href="../css/menu-dropdown-fix.css">
+    <link rel="stylesheet" href="../css/mega-menu-background-fix.css">
+    <link rel="stylesheet" href="../css/mega-menu-layout-fix.css">
+    <link rel="stylesheet" href="../css/mobile-navigation-fix.css">
+    <link rel="stylesheet" href="../css/mega-menu-responsive-fix.css">
+    <link rel="stylesheet" href="../css/mobile-fix.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html" class="logo-text">iDigital</a>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">
+                        Services <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu mega-menu">
+                        <div class="mega-menu-content">
+                            <div class="mega-menu-column">
+                                <h4>Development Services</h4>
+                                <a href="windows-development.html">Windows App Development</a>
+                                <a href="mac-development.html">Mac App Development</a>
+                                <a href="mobile-development.html">Mobile Apps (iOS/Android)</a>
+                                <a href="web-development.html">Web Applications</a>
+                                <a href="backend-development.html">Backend Development</a>
+                                <a href="frontend-development.html">Frontend Development</a>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Infrastructure & Cloud</h4>
+                                <a href="database-solutions.html">Database Solutions</a>
+                                <a href="cloud-services.html">Cloud Services</a>
+                                <a href="devops.html">DevOps & CI/CD</a>
+                                <a href="system-architecture.html">System Architecture</a>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Emerging Technologies</h4>
+                                <a href="ai-services.html">AI Services & ML</a>
+                                <a href="iot-solutions.html">IoT Solutions</a>
+                                <a href="blockchain.html">Blockchain Development</a>
+                                <a href="ar-vr.html">AR/VR Development</a>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Security & Quality</h4>
+                                <a href="secure-coding.html">Secure Coding Practices</a>
+                                <a href="security-audits.html">Security Audits</a>
+                                <a href="penetration-testing.html">Penetration Testing</a>
+                                <a href="code-reviews.html">Code Reviews</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">
+                        Technologies <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="programming-languages.html">Programming Languages</a>
+                        <a href="frameworks.html">Frameworks & Libraries</a>
+                        <a href="databases.html">Databases</a>
+                        <a href="cloud-platforms.html">Cloud Platforms</a>
+                    </div>
+                </div>
+                
+                <a href="industries.html" class="nav-link">Industries</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-cta">
+                <a href="get-quote.html" class="btn btn-primary">Get Quote</a>
+            </div>
+            
+                <a href="get-quote.html" class="btn btn-primary" data-translate="nav-get-quote">Get Quote</a>
+                <div class="nav-item dropdown language-selector">
+                    <a href="#" class="nav-link dropdown-toggle">
+                         EN <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item active" data-lang="en"> English</a>
+                        <a href="#" class="dropdown-item" data-lang="ar"> ???????</a>
+                        <a href="#" class="dropdown-item" data-lang="es"> Español</a>
+                        <a href="#" class="dropdown-item" data-lang="ru"> ???????</a>
+                        <a href="#" class="dropdown-item" data-lang="tr"> Türkçe</a>
+                        <a href="#" class="dropdown-item" data-lang="pt"> Português</a>
+                        <a href="#" class="dropdown-item" data-lang="ka"> ???????</a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="hero-background">
+            <div class="floating-elements">
+                <div class="floating-element" data-speed="0.5"><i class="fas fa-wifi"></i></div>
+                <div class="floating-element" data-speed="0.8"><i class="fas fa-microchip"></i></div>
+                <div class="floating-element" data-speed="0.3"><i class="fas fa-satellite-dish"></i></div>
+                <div class="floating-element" data-speed="0.6"><i class="fas fa-thermometer-half"></i></div>
+                <div class="floating-element" data-speed="0.4"><i class="fas fa-home"></i></div>
+                <div class="floating-element" data-speed="0.7"><i class="fas fa-car"></i></div>
+                <div class="floating-element" data-speed="0.5"><i class="fas fa-heartbeat"></i></div>
+            </div>
+            <div class="particle-container" id="particles"></div>
+        </div>
+        <div class="container">
+            <div class="page-header-content">
+                <h1 class="hero-animated-bg">IoT Solutions</h1>
+                <p>Build intelligent connected device ecosystems with smart sensors, edge computing, and real-time analytics for the Internet of Things.</p>
+                <div class="breadcrumb">
+                    <a href="../index.html">Home</a>
+                    <span>/</span>
+                    <span>Services</span>
+                    <span>/</span>
+                    <span>IoT Solutions</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Overview -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text fade-in-up">
+                    <h2>Connected Intelligence</h2>
+                    <p>Our IoT development team creates comprehensive connected device solutions that bridge the physical and digital worlds. From smart sensors and edge computing to cloud analytics and mobile interfaces, we build end-to-end IoT ecosystems that provide real-time insights and automation.</p>
+                    <p>We specialize in industrial IoT, smart home systems, healthcare monitoring, and environmental sensing solutions. Our expertise includes embedded programming, wireless communication protocols, data processing pipelines, and scalable cloud architectures designed for millions of connected devices.</p>
+                    <div class="service-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-network-wired"></i>
+                            <span>Connected Ecosystem</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Real-time Analytics</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Secure by Design</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image scale-in">
+                    <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?w=500&h=400&fit=crop" alt="IoT Solutions" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IoT Stack -->
+    <section class="technologies">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">IoT Technology Stack</h2>
+                <p class="section-subtitle">Comprehensive IoT development from devices to cloud</p>
+            </div>
+            
+            <div class="tech-categories">
+                <div class="tech-category iot-card slide-in-left" data-category="devices">
+                    <div class="iot-icon pulse-animation">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>Smart Devices</h3>
+                    <p>Embedded systems and smart sensors with wireless connectivity and edge processing.</p>
+                    <div class="iot-connection">
+                        <div class="connection-node active">Device</div>
+                        <div class="connection-line"></div>
+                        <div class="connection-node">Gateway</div>
+                        <div class="connection-line"></div>
+                        <div class="connection-node">Cloud</div>
+                    </div>
+                    <div class="iot-protocols">
+                        <span>Wi-Fi</span>
+                        <span>Bluetooth</span>
+                        <span>LoRaWAN</span>
+                        <span>Zigbee</span>
+                    </div>
+                </div>
+                
+                <div class="tech-category iot-card slide-in-right" data-category="platforms">
+                    <div class="iot-icon glow-effect">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>IoT Platforms</h3>
+                    <p>Cloud platforms for device management, data processing, and analytics at scale.</p>
+                    <div class="iot-connection">
+                        <div class="connection-node">AWS IoT</div>
+                        <div class="connection-line"></div>
+                        <div class="connection-node active">Azure IoT</div>
+                        <div class="connection-line"></div>
+                        <div class="connection-node">Google IoT</div>
+                    </div>
+                    <div class="iot-protocols">
+                        <span>MQTT</span>
+                        <span>CoAP</span>
+                        <span>HTTP/HTTPS</span>
+                        <span>WebSocket</span>
+                    </div>
+                </div>
+                
+                <div class="tech-category iot-card bounce-in" data-category="analytics">
+                    <div class="iot-icon rotate-in">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Data Analytics</h3>
+                    <p>Real-time processing and machine learning for IoT data insights and predictions.</p>
+                    <div class="iot-connection">
+                        <div class="connection-node">Collect</div>
+                        <div class="connection-line"></div>
+                        <div class="connection-node active">Process</div>
+                        <div class="connection-line"></div>
+                        <div class="connection-node">Analyze</div>
+                    </div>
+                    <div class="iot-protocols">
+                        <span>Time Series</span>
+                        <span>ML Pipeline</span>
+                        <span>Real-time</span>
+                        <span>Alerts</span>
+                    </div>
+                </div>
+                
+                <div class="tech-category iot-card fade-in-up" data-category="security">
+                    <div class="iot-icon pulse-animation">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>IoT Security</h3>
+                    <p>End-to-end security with device authentication, encryption, and secure communication.</p>
+                    <div class="iot-connection">
+                        <div class="connection-node">Auth</div>
+                        <div class="connection-line"></div>
+                        <div class="connection-node active">Encrypt</div>
+                        <div class="connection-line"></div>
+                        <div class="connection-node">Monitor</div>
+                    </div>
+                    <div class="iot-protocols">
+                        <span>TLS/SSL</span>
+                        <span>PKI</span>
+                        <span>OTA Updates</span>
+                        <span>Zero Trust</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">IoT Development Excellence</h2>
+                <p class="section-subtitle">Complete IoT solutions from concept to deployment</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card bounce-in">
+                    <div class="feature-icon glow-effect">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>Embedded Development</h3>
+                    <p>Custom firmware development for microcontrollers with optimized power consumption and real-time performance.</p>
+                </div>
+                
+                <div class="feature-card slide-in-left">
+                    <div class="feature-icon pulse-animation">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>Connectivity Solutions</h3>
+                    <p>Multi-protocol connectivity including Wi-Fi, Bluetooth, LoRaWAN, and cellular for various IoT use cases.</p>
+                </div>
+                
+                <div class="feature-card slide-in-right">
+                    <div class="feature-icon rotate-in">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Real-time Analytics</h3>
+                    <p>Stream processing and machine learning pipelines for immediate insights and predictive maintenance.</p>
+                </div>
+                
+                <div class="feature-card scale-in">
+                    <div class="feature-icon glow-effect">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Integration</h3>
+                    <p>Native mobile apps for device control, monitoring, and configuration with intuitive user interfaces.</p>
+                </div>
+                
+                <div class="feature-card fade-in-up">
+                    <div class="feature-icon pulse-animation">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Edge Computing</h3>
+                    <p>Local processing capabilities for reduced latency, bandwidth optimization, and offline functionality.</p>
+                </div>
+                
+                <div class="feature-card slide-in-left">
+                    <div class="feature-icon rotate-in">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </div>
+                    <h3>Scalable Architecture</h3>
+                    <p>Cloud-native architectures designed to handle millions of devices with auto-scaling and load balancing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section class="about-section" style="background: var(--light-color);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">IoT Use Cases</h2>
+                <p class="section-subtitle">Innovative applications across industries</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="process-step bounce-in">
+                    <div class="step-number"><i class="fas fa-industry"></i></div>
+                    <h3>Industrial IoT</h3>
+                    <p>Equipment monitoring, predictive maintenance, supply chain optimization, and smart manufacturing with real-time dashboards.</p>
+                </div>
+                
+                <div class="process-step slide-in-left">
+                    <div class="step-number"><i class="fas fa-home"></i></div>
+                    <h3>Smart Buildings</h3>
+                    <p>Automated lighting, HVAC control, security systems, and energy management for intelligent building operations.</p>
+                </div>
+                
+                <div class="process-step slide-in-right">
+                    <div class="step-number"><i class="fas fa-heartbeat"></i></div>
+                    <h3>Healthcare IoT</h3>
+                    <p>Patient monitoring, medical device connectivity, and health analytics for improved care and outcomes.</p>
+                </div>
+                
+                <div class="process-step scale-in">
+                    <div class="step-number"><i class="fas fa-leaf"></i></div>
+                    <h3>Environmental Monitoring</h3>
+                    <p>Air quality sensors, weather stations, and environmental data collection for sustainability initiatives.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Connect Your World?</h2>
+                <p>Build intelligent IoT solutions that transform how you interact with the physical world through connected devices and real-time insights.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-lg">Start IoT Project</a>
+                    <a href="get-quote.html" class="btn btn-secondary btn-lg">Get IoT Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="../assets/images/idigital-logo-white.svg" alt="iDigital">
+                    </div>
+                    <p>Transforming businesses through secure, innovative digital solutions. Your trusted technology partner for the digital age.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer-services">Services</h4>
+                    <ul>
+                        <li><a href="mobile-development.html">Mobile Development</a></li>
+                        <li><a href="web-development.html">Web Applications</a></li>
+                        <li><a href="ai-services.html">AI Services</a></li>
+                        <li><a href="cloud-services.html">Cloud Solutions</a></li>
+                        <li><a href="security-audits.html">Security Auditing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer-technologies">Technologies</h4>
+                    <ul>
+                        <li><a href="programming-languages.html">Programming Languages</a></li>
+                        <li><a href="frameworks.html">Frameworks</a></li>
+                        <li><a href="databases.html">Databases</a></li>
+                        <li><a href="cloud-platforms.html">Cloud Platforms</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer-company">Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html"><span data-translate="footer-privacy">Privacy Policy</span></a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +1 504 342 9109</p>
+                        <p><i class="fas fa-envelope"></i> software@idigitalusa.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 1851 Rousseau St, New Orleans LA 70130</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 iDigital. All rights reserved. | <a href="privacy.html"><span data-translate="footer-privacy">Privacy Policy</span></a> | <a href="terms.html"><span data-translate="footer-terms">Terms of Service</span></a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+    <script src="../js/animations.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

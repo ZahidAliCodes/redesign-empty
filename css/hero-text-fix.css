@@ -1,0 +1,84 @@
+/* HERO TEXT TYPOGRAPHY FIXES */
+
+.hero-title {
+    font-size: clamp(1.8rem, 6vw, 4rem);
+    font-weight: 700;
+    margin-bottom: var(--spacing-lg);
+    line-height: 1.2;
+    color: var(--white) !important;
+    width: 100%;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: clamp(1.5rem, 8vw, 2.5rem);
+        line-height: 1.3;
+        text-align: center;
+        padding: 0 var(--spacing-sm);
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: clamp(1.2rem, 9vw, 2rem);
+        line-height: 1.4;
+    }
+}
+
+.typing-text {
+    color: var(--white) !important;
+    display: inline-block;
+    border-right: none !important;
+    padding-right: 0;
+    animation: none !important;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    width: 100%;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+    .typing-text {
+        font-size: inherit;
+        line-height: inherit;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .typing-text {
+        border-right: none !important;
+        padding-right: 0;
+    }
+}
+
+@keyframes blink {
+    0%, 50% { border-color: transparent; }
+    51%, 100% { border-color: white; }
+}
+
+/* Ensure typing text is always visible */
+#typing-text {
+    color: white !important;
+    background: none !important;
+    background-clip: unset !important;
+    -webkit-background-clip: unset !important;
+    -webkit-text-fill-color: white !important;
+    border-right: none !important;
+    animation: none !important;
+}
+
+/* Override any gradient effects on hero text */
+.hero-animated-bg {
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    -webkit-text-fill-color: white !important;
+    color: white !important;
+}

@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Mac Application Development by iDigital. Build elegant, high-performance macOS applications with native Swift and modern design.">
+    <title>Mac App Development - iDigital | Native macOS Solutions</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/mobile-critical.css">
+    <link rel="stylesheet" href="../css/hero-text-fix.css">
+    <link rel="stylesheet" href="../css/spacing-fix.css">
+    <link rel="stylesheet" href="../css/final-fixes.css">
+    <link rel="stylesheet" href="../css/navigation-fix.css">
+    <link rel="stylesheet" href="../css/stats-fix.css">
+    <link rel="stylesheet" href="../css/comprehensive-responsive-fix.css">
+    <link rel="stylesheet" href="../css/footer-text-fix.css">
+    <link rel="stylesheet" href="../css/hero-hover-fix.css">
+    <link rel="stylesheet" href="../css/menu-dropdown-fix.css">
+    <link rel="stylesheet" href="../css/mega-menu-background-fix.css">
+    <link rel="stylesheet" href="../css/mega-menu-layout-fix.css">
+    <link rel="stylesheet" href="../css/mobile-navigation-fix.css">
+    <link rel="stylesheet" href="../css/mega-menu-responsive-fix.css">
+    <link rel="stylesheet" href="../css/mobile-fix.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html" class="logo-text">iDigital</a>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">
+                        Services <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu mega-menu">
+                        <div class="mega-menu-content">
+                            <div class="mega-menu-column">
+                                <h4>Development Services</h4>
+                                <a href="windows-development.html">Windows App Development</a>
+                                <a href="mac-development.html">Mac App Development</a>
+                                <a href="mobile-development.html">Mobile Apps (iOS/Android)</a>
+                                <a href="web-development.html">Web Applications</a>
+                                <a href="backend-development.html">Backend Development</a>
+                                <a href="frontend-development.html">Frontend Development</a>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Infrastructure & Cloud</h4>
+                                <a href="database-solutions.html">Database Solutions</a>
+                                <a href="cloud-services.html">Cloud Services</a>
+                                <a href="devops.html">DevOps & CI/CD</a>
+                                <a href="system-architecture.html">System Architecture</a>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Emerging Technologies</h4>
+                                <a href="ai-services.html">AI Services & ML</a>
+                                <a href="iot-solutions.html">IoT Solutions</a>
+                                <a href="blockchain.html">Blockchain Development</a>
+                                <a href="ar-vr.html">AR/VR Development</a>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Security & Quality</h4>
+                                <a href="secure-coding.html">Secure Coding Practices</a>
+                                <a href="security-audits.html">Security Audits</a>
+                                <a href="penetration-testing.html">Penetration Testing</a>
+                                <a href="code-reviews.html">Code Reviews</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">
+                        Technologies <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="programming-languages.html">Programming Languages</a>
+                        <a href="frameworks.html">Frameworks & Libraries</a>
+                        <a href="databases.html">Databases</a>
+                        <a href="cloud-platforms.html">Cloud Platforms</a>
+                    </div>
+                </div>
+                
+                <a href="industries.html" class="nav-link">Industries</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-cta">
+                <a href="get-quote.html" class="btn btn-primary">Get Quote</a>
+            </div>
+            
+                <a href="get-quote.html" class="btn btn-primary" data-translate="nav-get-quote">Get Quote</a>
+                <div class="nav-item dropdown language-selector">
+                    <a href="#" class="nav-link dropdown-toggle">
+                         EN <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item active" data-lang="en"> English</a>
+                        <a href="#" class="dropdown-item" data-lang="ar"> ???????</a>
+                        <a href="#" class="dropdown-item" data-lang="es"> Español</a>
+                        <a href="#" class="dropdown-item" data-lang="ru"> ???????</a>
+                        <a href="#" class="dropdown-item" data-lang="tr"> Türkçe</a>
+                        <a href="#" class="dropdown-item" data-lang="pt"> Português</a>
+                        <a href="#" class="dropdown-item" data-lang="ka"> ???????</a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="hero-background">
+            <div class="floating-elements">
+                <div class="floating-element" data-speed="0.5"><i class="fab fa-apple"></i></div>
+                <div class="floating-element" data-speed="0.8"><i class="fab fa-swift"></i></div>
+                <div class="floating-element" data-speed="0.3"><i class="fas fa-laptop"></i></div>
+                <div class="floating-element" data-speed="0.6"><i class="fas fa-layer-group"></i></div>
+                <div class="floating-element" data-speed="0.4"><i class="fas fa-cube"></i></div>
+                <div class="floating-element" data-speed="0.7"><i class="fas fa-paintbrush"></i></div>
+            </div>
+            <div class="particle-container" id="particles"></div>
+        </div>
+        <div class="container">
+            <div class="page-header-content">
+                <h1 class="hero-animated-bg">Mac Application Development</h1>
+                <p>Create beautiful, high-performance macOS applications that integrate seamlessly with the Apple ecosystem and deliver exceptional user experiences.</p>
+                <div class="breadcrumb">
+                    <a href="../index.html">Home</a>
+                    <span>/</span>
+                    <span>Services</span>
+                    <span>/</span>
+                    <span>Mac Development</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Overview -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text bounce-in">
+                    <h2>Native macOS Excellence</h2>
+                    <p>Our Mac development team specializes in creating sophisticated macOS applications using Swift, SwiftUI, and Objective-C. We build applications that feel native to the Mac platform, leveraging the full power of macOS frameworks and following Apple's Human Interface Guidelines.</p>
+                    <p>From productivity tools to creative applications, we develop Mac software that takes advantage of advanced macOS features like Touch Bar support, Dark Mode, Continuity, and integration with iCloud, ensuring your app feels like a natural part of the Mac experience.</p>
+                    <div class="service-highlights">
+                        <div class="highlight-item">
+                            <i class="fab fa-apple"></i>
+                            <span>Native macOS</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-palette"></i>
+                            <span>Responsive Design</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-link"></i>
+                            <span>Ecosystem Integration</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image rotate-in">
+                    <img src="https://images.unsplash.com/photo-1484807352052-23338990c6c6?w=500&h=400&fit=crop" alt="Mac Development" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies -->
+    <section class="technologies">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">macOS Development Stack</h2>
+                <p class="section-subtitle">Modern tools and frameworks for exceptional Mac applications</p>
+            </div>
+            
+            <div class="tech-categories">
+                <div class="tech-category slide-in-left" data-category="languages">
+                    <h3>Programming Languages</h3>
+                    <div class="tech-logos">
+                        <div class="tech-logo pulse-animation">
+                            <i class="fab fa-swift"></i>
+                            <span>Swift</span>
+                        </div>
+                        <div class="tech-logo glow-effect">
+                            <i class="fas fa-code"></i>
+                            <span>Objective-C</span>
+                        </div>
+                        <div class="tech-logo">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tech-logo">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-category slide-in-right" data-category="frameworks">
+                    <h3>Frameworks & UI</h3>
+                    <div class="tech-logos">
+                        <div class="tech-logo rotate-in">
+                            <i class="fas fa-cube"></i>
+                            <span>SwiftUI</span>
+                        </div>
+                        <div class="tech-logo scale-in">
+                            <i class="fas fa-window-maximize"></i>
+                            <span>AppKit</span>
+                        </div>
+                        <div class="tech-logo">
+                            <i class="fas fa-layer-group"></i>
+                            <span>Core Data</span>
+                        </div>
+                        <div class="tech-logo">
+                            <i class="fas fa-video"></i>
+                            <span>Core Animation</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-category fade-in-up" data-category="tools">
+                    <h3>Development Tools</h3>
+                    <div class="tech-logos">
+                        <div class="tech-logo glow-effect">
+                            <i class="fab fa-apple"></i>
+                            <span>Xcode</span>
+                        </div>
+                        <div class="tech-logo">
+                            <i class="fas fa-tools"></i>
+                            <span>Instruments</span>
+                        </div>
+                        <div class="tech-logo">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="tech-logo">
+                            <i class="fas fa-box"></i>
+                            <span>CocoaPods</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-category scale-in" data-category="integration">
+                    <h3>Apple Integration</h3>
+                    <div class="tech-logos">
+                        <div class="tech-logo pulse-animation">
+                            <i class="fas fa-cloud"></i>
+                            <span>iCloud</span>
+                        </div>
+                        <div class="tech-logo">
+                            <i class="fas fa-fingerprint"></i>
+                            <span>Touch ID</span>
+                        </div>
+                        <div class="tech-logo">
+                            <i class="fas fa-bell"></i>
+                            <span>Notifications</span>
+                        </div>
+                        <div class="tech-logo">
+                            <i class="fas fa-share-alt"></i>
+                            <span>App Extensions</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Mac Development Excellence</h2>
+                <p class="section-subtitle">Creating applications that feel at home on every Mac</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card bounce-in">
+                    <div class="feature-icon glow-effect">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3>Native User Experience</h3>
+                    <p>Applications that follow Apple's Human Interface Guidelines with native controls, gestures, and behaviors that Mac users expect.</p>
+                </div>
+                
+                <div class="feature-card slide-in-left">
+                    <div class="feature-icon pulse-animation">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Responsive Design</h3>
+                    <p>Stunning interfaces with support for Dark Mode, custom window styles, and advanced graphics using Core Animation and Metal.</p>
+                </div>
+                
+                <div class="feature-card slide-in-right">
+                    <div class="feature-icon rotate-in">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>High Performance</h3>
+                    <p>Optimized for Apple Silicon and Intel Macs with efficient memory usage, fast startup times, and smooth 60fps animations.</p>
+                </div>
+                
+                <div class="feature-card scale-in">
+                    <div class="feature-icon glow-effect">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Continuity Features</h3>
+                    <p>Seamless integration with iPhone and iPad apps, Handoff support, and Universal Clipboard for a unified Apple experience.</p>
+                </div>
+                
+                <div class="feature-card fade-in-up">
+                    <div class="feature-icon pulse-animation">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Security & Privacy</h3>
+                    <p>App sandboxing, Gatekeeper compatibility, and privacy-focused development following Apple's security best practices.</p>
+                </div>
+                
+                <div class="feature-card slide-in-left">
+                    <div class="feature-icon rotate-in">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>App Store Ready</h3>
+                    <p>Complete App Store submission support with code signing, notarization, and optimization for Mac App Store guidelines.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section class="about-section" style="background: var(--light-color);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Mac Development Process</h2>
+                <p class="section-subtitle">From concept to Mac App Store - our proven methodology</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="process-step bounce-in">
+                    <div class="step-number">01</div>
+                    <h3>Design & Planning</h3>
+                    <p>Mac-specific user experience design, feature planning, and architecture that leverages macOS capabilities and follows Apple's design principles.</p>
+                </div>
+                
+                <div class="process-step slide-in-left">
+                    <div class="step-number">02</div>
+                    <h3>Native Development</h3>
+                    <p>Swift and SwiftUI development with AppKit integration, ensuring optimal performance and native Mac functionality throughout the application.</p>
+                </div>
+                
+                <div class="process-step slide-in-right">
+                    <div class="step-number">03</div>
+                    <h3>Testing & Optimization</h3>
+                    <p>Comprehensive testing on multiple Mac configurations, performance optimization, and Apple ecosystem integration validation.</p>
+                </div>
+                
+                <div class="process-step scale-in">
+                    <div class="step-number">04</div>
+                    <h3>Distribution & Support</h3>
+                    <p>App Store submission, notarization, code signing, and ongoing support with macOS version compatibility updates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Build Your Mac Application?</h2>
+                <p>Create a stunning macOS application that takes full advantage of the Mac platform and delights your users.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-lg">Start Mac Project</a>
+                    <a href="get-quote.html" class="btn btn-secondary btn-lg">Get Mac Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="../assets/images/idigital-logo-white.svg" alt="iDigital">
+                    </div>
+                    <p>Transforming businesses through secure, innovative digital solutions. Your trusted technology partner for the digital age.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer-services">Services</h4>
+                    <ul>
+                        <li><a href="mobile-development.html">Mobile Development</a></li>
+                        <li><a href="web-development.html">Web Applications</a></li>
+                        <li><a href="ai-services.html">AI Services</a></li>
+                        <li><a href="cloud-services.html">Cloud Solutions</a></li>
+                        <li><a href="security-audits.html">Security Auditing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer-technologies">Technologies</h4>
+                    <ul>
+                        <li><a href="programming-languages.html">Programming Languages</a></li>
+                        <li><a href="frameworks.html">Frameworks</a></li>
+                        <li><a href="databases.html">Databases</a></li>
+                        <li><a href="cloud-platforms.html">Cloud Platforms</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer-company">Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html"><span data-translate="footer-privacy">Privacy Policy</span></a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +1 504 342 9109</p>
+                        <p><i class="fas fa-envelope"></i> software@idigitalusa.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 1851 Rousseau St, New Orleans LA 70130</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 iDigital. All rights reserved. | <a href="privacy.html"><span data-translate="footer-privacy">Privacy Policy</span></a> | <a href="terms.html"><span data-translate="footer-terms">Terms of Service</span></a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+    <script src="../js/animations.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,225 @@
+/* FINAL COMPREHENSIVE FIXES */
+
+/* GET QUOTE BUTTON - ALWAYS WHITE TEXT */
+.btn,
+.btn-primary,
+.nav-cta .btn,
+a.btn {
+    color: var(--white) !important;
+    text-decoration: none !important;
+}
+
+.btn:hover,
+.btn-primary:hover,
+.nav-cta .btn:hover,
+a.btn:hover {
+    color: var(--white) !important;
+    text-decoration: none !important;
+}
+
+/* SEARCH BUTTON HOVER - BLACK TEXT */
+.search-btn,
+.btn-search,
+.search-toggle {
+    color: var(--white) !important;
+}
+
+.search-btn:hover,
+.btn-search:hover,
+.search-toggle:hover {
+    color: var(--dark-color) !important;
+    background: var(--white) !important;
+}
+
+/* NAVIGATION CTA LAYOUT - ONE LINE */
+.nav-cta {
+    display: flex !important;
+    align-items: center !important;
+    gap: var(--spacing-sm) !important;
+    flex-wrap: nowrap !important;
+    white-space: nowrap !important;
+}
+
+.nav-cta > * {
+    flex-shrink: 0 !important;
+}
+
+.language-selector {
+    margin-left: var(--spacing-xs) !important;
+}
+
+@media (max-width: 768px) {
+    .nav-cta {
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        width: 100% !important;
+        padding: 10px 15px !important;
+    }
+}
+
+/* DROPDOWN AND MEGA MENU - WHITE TEXT */
+.dropdown-menu {
+    background: var(--dark-color) !important;
+}
+
+.dropdown-menu a,
+.mega-menu-column a {
+    color: var(--white) !important;
+}
+
+.dropdown-menu a:hover,
+.mega-menu-column a:hover {
+    color: var(--dark-color) !important;
+    background: var(--white) !important;
+}
+
+.mega-menu-column h4 {
+    color: var(--white) !important;
+}
+
+.mega-menu {
+    background: var(--dark-color) !important;
+}
+
+/* HIDE HAMBURGER ON DESKTOP COMPLETELY */
+@media (min-width: 769px) {
+    .hamburger {
+        display: none !important;
+        visibility: hidden !important;
+    }
+}
+
+/* FOOTER LOGO STYLING */
+.footer-logo-text {
+    font-family: 'Myriad Pro', 'Inter', sans-serif !important;
+    font-size: var(--font-size-xl) !important;
+    font-weight: 700 !important;
+    color: var(--white) !important;
+    text-decoration: none !important;
+    margin-bottom: var(--spacing-sm);
+}
+
+/* ENSURE ALL NAVIGATION TEXT IS WHITE ON DARK BACKGROUND */
+.navbar:not(.scrolled) .nav-link,
+.navbar:not(.scrolled) .dropdown-toggle {
+    color: var(--white) !important;
+}
+
+.navbar.scrolled .nav-link,
+.navbar.scrolled) .dropdown-toggle {
+    color: var(--dark-color) !important;
+}
+
+/* IMPROVE ABOUT PAGE CONTENT WRAPPING */
+.highlight-item {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: var(--spacing-md) !important;
+    padding: var(--spacing-lg) !important;
+    background: var(--white) !important;
+    border-radius: var(--border-radius-lg) !important;
+    box-shadow: var(--shadow-md) !important;
+    max-width: 100% !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+}
+
+.highlight-item div {
+    flex: 1 !important;
+    min-width: 0 !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+}
+
+.highlight-item i {
+    flex-shrink: 0 !important;
+    width: 40px !important;
+    height: 40px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: var(--primary-color) !important;
+    color: var(--white) !important;
+    border-radius: 50% !important;
+    font-size: 18px !important;
+}
+
+/* RESPONSIVE GRID IMPROVEMENTS */
+.expertise-highlights {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+    gap: var(--spacing-lg) !important;
+    margin-top: var(--spacing-xl) !important;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+@media (max-width: 768px) {
+    .expertise-highlights {
+        grid-template-columns: 1fr !important;
+        gap: var(--spacing-md) !important;
+    }
+    
+    .highlight-item {
+        padding: var(--spacing-md) !important;
+    }
+}
+
+/* ENSURE PROPER SPACING AND NO OVERFLOW */
+.container {
+    max-width: 1400px !important;
+    margin: 0 auto !important;
+    padding: 0 var(--spacing-md) !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+/* FIX ANY REMAINING BUTTON ISSUES */
+.btn,
+.btn-primary,
+.nav-cta a {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)) !important;
+    color: var(--white) !important;
+    border: none !important;
+    text-decoration: none !important;
+}
+
+.btn:hover,
+.btn-primary:hover,
+.nav-cta a:hover {
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color)) !important;
+    color: var(--white) !important;
+    text-decoration: none !important;
+    transform: translateY(-2px) !important;
+}
+
+/* STATISTICS LABELS - WHITE TEXT */
+.stat-label,
+.stats-section .stat-label,
+.hero .stat-label {
+    color: var(--white) !important;
+    font-weight: 500 !important;
+}
+
+/* STATISTICS NUMBERS - WHITE TEXT */
+.stat-number,
+.stats-section .stat-number,
+.hero .stat-number {
+    color: var(--white) !important;
+    font-weight: 700 !important;
+}
+
+/* STATISTICS CONTAINER STYLING */
+.stats-section,
+.hero-stats,
+.stats-grid {
+    color: var(--white) !important;
+}
+
+.stat-item {
+    color: var(--white) !important;
+}
+
+.stat-item * {
+    color: var(--white) !important;
+}

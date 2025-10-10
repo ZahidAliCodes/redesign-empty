@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Secure Coding Practices by iDigital. Implement robust security measures, prevent vulnerabilities, and build secure applications from the ground up.">
+    <title>Secure Coding Practices - iDigital | Application Security</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/mobile-critical.css">
+    <link rel="stylesheet" href="../css/hero-text-fix.css">
+    <link rel="stylesheet" href="../css/spacing-fix.css">
+    <link rel="stylesheet" href="../css/final-fixes.css">
+    <link rel="stylesheet" href="../css/navigation-fix.css">
+    <link rel="stylesheet" href="../css/stats-fix.css">
+    <link rel="stylesheet" href="../css/comprehensive-responsive-fix.css">
+    <link rel="stylesheet" href="../css/footer-text-fix.css">
+    <link rel="stylesheet" href="../css/hero-hover-fix.css">
+    <link rel="stylesheet" href="../css/menu-dropdown-fix.css">
+    <link rel="stylesheet" href="../css/mega-menu-background-fix.css">
+    <link rel="stylesheet" href="../css/mega-menu-layout-fix.css">
+    <link rel="stylesheet" href="../css/mobile-navigation-fix.css">
+    <link rel="stylesheet" href="../css/mega-menu-responsive-fix.css">
+    <link rel="stylesheet" href="../css/mobile-fix.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html" class="logo-text">iDigital</a>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">
+                        Services <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu mega-menu">
+                        <div class="mega-menu-content">
+                            <div class="mega-menu-column">
+                                <h4>Development Services</h4>
+                                <a href="windows-development.html">Windows App Development</a>
+                                <a href="mac-development.html">Mac App Development</a>
+                                <a href="mobile-development.html">Mobile Apps (iOS/Android)</a>
+                                <a href="web-development.html">Web Applications</a>
+                                <a href="backend-development.html">Backend Development</a>
+                                <a href="frontend-development.html">Frontend Development</a>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Infrastructure & Cloud</h4>
+                                <a href="database-solutions.html">Database Solutions</a>
+                                <a href="cloud-services.html">Cloud Services</a>
+                                <a href="devops.html">DevOps & CI/CD</a>
+                                <a href="system-architecture.html">System Architecture</a>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Emerging Technologies</h4>
+                                <a href="ai-services.html">AI Services & ML</a>
+                                <a href="iot-solutions.html">IoT Solutions</a>
+                                <a href="blockchain.html">Blockchain Development</a>
+                                <a href="ar-vr.html">AR/VR Development</a>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Security & Quality</h4>
+                                <a href="secure-coding.html">Secure Coding Practices</a>
+                                <a href="security-audits.html">Security Audits</a>
+                                <a href="penetration-testing.html">Penetration Testing</a>
+                                <a href="code-reviews.html">Code Reviews</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">
+                        Technologies <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="programming-languages.html">Programming Languages</a>
+                        <a href="frameworks.html">Frameworks & Libraries</a>
+                        <a href="databases.html">Databases</a>
+                        <a href="cloud-platforms.html">Cloud Platforms</a>
+                    </div>
+                </div>
+                
+                <a href="industries.html" class="nav-link">Industries</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-cta">
+                <a href="get-quote.html" class="btn btn-primary">Get Quote</a>
+            </div>
+            
+                <a href="get-quote.html" class="btn btn-primary" data-translate="nav-get-quote">Get Quote</a>
+                <div class="nav-item dropdown language-selector">
+                    <a href="#" class="nav-link dropdown-toggle">
+                         EN <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item active" data-lang="en"> English</a>
+                        <a href="#" class="dropdown-item" data-lang="ar"> ???????</a>
+                        <a href="#" class="dropdown-item" data-lang="es"> Espa�ol</a>
+                        <a href="#" class="dropdown-item" data-lang="ru"> ???????</a>
+                        <a href="#" class="dropdown-item" data-lang="tr"> T�rk�e</a>
+                        <a href="#" class="dropdown-item" data-lang="pt"> Portugu�s</a>
+                        <a href="#" class="dropdown-item" data-lang="ka"> ???????</a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="hero-background">
+            <div class="floating-elements">
+                <div class="floating-element" data-speed="0.5"><i class="fas fa-shield-alt"></i></div>
+                <div class="floating-element" data-speed="0.8"><i class="fas fa-lock"></i></div>
+                <div class="floating-element" data-speed="0.3"><i class="fas fa-key"></i></div>
+                <div class="floating-element" data-speed="0.6"><i class="fas fa-user-shield"></i></div>
+                <div class="floating-element" data-speed="0.4"><i class="fas fa-code"></i></div>
+                <div class="floating-element" data-speed="0.7"><i class="fas fa-bug"></i></div>
+                <div class="floating-element" data-speed="0.5"><i class="fas fa-certificate"></i></div>
+            </div>
+            <div class="particle-container" id="particles"></div>
+        </div>
+        <div class="container">
+            <div class="page-header-content">
+                <h1 class="hero-animated-bg">Secure Coding Practices</h1>
+                <p>Build secure applications from the ground up with industry-standard security practices, vulnerability prevention, and comprehensive security frameworks.</p>
+                <div class="breadcrumb">
+                    <a href="../index.html">Home</a>
+                    <span>/</span>
+                    <span>Services</span>
+                    <span>/</span>
+                    <span>Secure Coding</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Overview -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text fade-in-up">
+                    <h2>Security by Design</h2>
+                    <p>Our security experts implement comprehensive secure coding practices that protect your applications from the most common and sophisticated threats. We follow OWASP guidelines, industry standards, and security frameworks to ensure your code is resilient against vulnerabilities.</p>
+                    <p>From input validation and authentication to encryption and secure deployment, we integrate security measures throughout the development lifecycle. Our approach includes threat modeling, secure architecture design, and continuous security testing to maintain the highest security standards.</p>
+                    <div class="service-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-shield-virus"></i>
+                            <span>Vulnerability Prevention</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>OWASP Compliant</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-lock"></i>
+                            <span>Zero Trust Security</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image slide-in-right">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500&h=400&fit=crop" alt="Secure Coding" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Framework -->
+    <section class="technologies">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Security Framework</h2>
+                <p class="section-subtitle">Comprehensive security implementation across all layers</p>
+            </div>
+            
+            <div class="tech-categories">
+                <div class="tech-category security-card bounce-in" data-category="authentication">
+                    <div class="security-icon pulse-animation">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>Authentication & Authorization</h3>
+                    <p>Multi-factor authentication, secure session management, and role-based access controls.</p>
+                    <div class="security-shield">
+                        <div class="shield-layer">MFA</div>
+                        <div class="shield-connector">🔒</div>
+                        <div class="shield-layer active">JWT</div>
+                        <div class="shield-connector">🔒</div>
+                        <div class="shield-layer">RBAC</div>
+                    </div>
+                    <div class="security-methods">
+                        <span>OAuth 2.0</span>
+                        <span>OpenID Connect</span>
+                        <span>SAML</span>
+                        <span>Biometrics</span>
+                    </div>
+                </div>
+                
+                <div class="tech-category security-card slide-in-left" data-category="encryption">
+                    <div class="security-icon glow-effect">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <h3>Data Encryption</h3>
+                    <p>End-to-end encryption, secure key management, and cryptographic best practices.</p>
+                    <div class="security-shield">
+                        <div class="shield-layer">AES-256</div>
+                        <div class="shield-connector">🔐</div>
+                        <div class="shield-layer active">RSA</div>
+                        <div class="shield-connector">🔐</div>
+                        <div class="shield-layer">TLS 1.3</div>
+                    </div>
+                    <div class="security-methods">
+                        <span>At Rest</span>
+                        <span>In Transit</span>
+                        <span>In Memory</span>
+                        <span>HSM</span>
+                    </div>
+                </div>
+                
+                <div class="tech-category security-card slide-in-right" data-category="validation">
+                    <div class="security-icon rotate-in">
+                        <i class="fas fa-filter"></i>
+                    </div>
+                    <h3>Input Validation</h3>
+                    <p>Comprehensive input sanitization and validation to prevent injection attacks.</p>
+                    <div class="security-shield">
+                        <div class="shield-layer">Sanitize</div>
+                        <div class="shield-connector">🛡️</div>
+                        <div class="shield-layer active">Validate</div>
+                        <div class="shield-connector">🛡️</div>
+                        <div class="shield-layer">Escape</div>
+                    </div>
+                    <div class="security-methods">
+                        <span>SQL Injection</span>
+                        <span>XSS Prevention</span>
+                        <span>CSRF Protection</span>
+                        <span>Data Validation</span>
+                    </div>
+                </div>
+                
+                <div class="tech-category security-card fade-in-up" data-category="monitoring">
+                    <div class="security-icon pulse-animation">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Security Monitoring</h3>
+                    <p>Real-time threat detection, logging, and incident response capabilities.</p>
+                    <div class="security-shield">
+                        <div class="shield-layer">Detect</div>
+                        <div class="shield-connector">👁️</div>
+                        <div class="shield-layer active">Alert</div>
+                        <div class="shield-connector">👁️</div>
+                        <div class="shield-layer">Respond</div>
+                    </div>
+                    <div class="security-methods">
+                        <span>SIEM</span>
+                        <span>WAF</span>
+                        <span>IDS/IPS</span>
+                        <span>SOC</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Features -->
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Secure Development Lifecycle</h2>
+                <p class="section-subtitle">Security integrated throughout the development process</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card bounce-in">
+                    <div class="feature-icon glow-effect">
+                        <i class="fas fa-shield-virus"></i>
+                    </div>
+                    <h3>Threat Modeling</h3>
+                    <p>Systematic identification and mitigation of potential security threats during the design phase.</p>
+                </div>
+                
+                <div class="feature-card slide-in-left">
+                    <div class="feature-icon pulse-animation">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Secure Code Review</h3>
+                    <p>Comprehensive code analysis using automated tools and manual reviews to identify vulnerabilities.</p>
+                </div>
+                
+                <div class="feature-card slide-in-right">
+                    <div class="feature-icon rotate-in">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3>Vulnerability Testing</h3>
+                    <p>Static and dynamic security testing throughout development and deployment phases.</p>
+                </div>
+                
+                <div class="feature-card scale-in">
+                    <div class="feature-icon glow-effect">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Compliance Standards</h3>
+                    <p>Implementation of security frameworks including OWASP, NIST, and industry-specific regulations.</p>
+                </div>
+                
+                <div class="feature-card fade-in-up">
+                    <div class="feature-icon pulse-animation">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Security Tools Integration</h3>
+                    <p>Integration of security scanning tools into CI/CD pipelines for continuous security validation.</p>
+                </div>
+                
+                <div class="feature-card slide-in-left">
+                    <div class="feature-icon rotate-in">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Security Training</h3>
+                    <p>Developer education and security awareness training to build security-conscious development teams.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Process -->
+    <section class="about-section" style="background: var(--light-color);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Secure Development Process</h2>
+                <p class="section-subtitle">Systematic approach to building secure applications</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="process-step bounce-in">
+                    <div class="step-number">01</div>
+                    <h3>Security Planning</h3>
+                    <p>Threat modeling, security requirements analysis, and security architecture design with risk assessment.</p>
+                </div>
+                
+                <div class="process-step slide-in-left">
+                    <div class="step-number">02</div>
+                    <h3>Secure Implementation</h3>
+                    <p>Secure coding practices, input validation, authentication systems, and encryption implementation.</p>
+                </div>
+                
+                <div class="process-step slide-in-right">
+                    <div class="step-number">03</div>
+                    <h3>Security Testing</h3>
+                    <p>Vulnerability scanning, penetration testing, code reviews, and security validation throughout development.</p>
+                </div>
+                
+                <div class="process-step scale-in">
+                    <div class="step-number">04</div>
+                    <h3>Security Deployment</h3>
+                    <p>Secure deployment configuration, monitoring setup, incident response planning, and ongoing security maintenance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Secure Your Applications?</h2>
+                <p>Implement robust security measures and protect your applications with our comprehensive secure coding practices.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-lg">Start Security Assessment</a>
+                    <a href="get-quote.html" class="btn btn-secondary btn-lg">Get Security Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="../assets/images/idigital-logo-white.svg" alt="iDigital">
+                    </div>
+                    <p>Transforming businesses through secure, innovative digital solutions. Your trusted technology partner for the digital age.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer-services">Services</h4>
+                    <ul>
+                        <li><a href="mobile-development.html">Mobile Development</a></li>
+                        <li><a href="web-development.html">Web Applications</a></li>
+                        <li><a href="ai-services.html">AI Services</a></li>
+                        <li><a href="cloud-services.html">Cloud Solutions</a></li>
+                        <li><a href="security-audits.html">Security Auditing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer-technologies">Technologies</h4>
+                    <ul>
+                        <li><a href="programming-languages.html">Programming Languages</a></li>
+                        <li><a href="frameworks.html">Frameworks</a></li>
+                        <li><a href="databases.html">Databases</a></li>
+                        <li><a href="cloud-platforms.html">Cloud Platforms</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer-company">Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html"><span data-translate="footer-privacy">Privacy Policy</span></a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +1 504 342 9109</p>
+                        <p><i class="fas fa-envelope"></i> software@idigitalusa.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 1851 Rousseau St, New Orleans LA 70130</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 iDigital. All rights reserved. | <a href="privacy.html"><span data-translate="footer-privacy">Privacy Policy</span></a> | <a href="terms.html"><span data-translate="footer-terms">Terms of Service</span></a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+    <script src="../js/animations.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

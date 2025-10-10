@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="System Architecture by iDigital. Design scalable, resilient system architectures with microservices, cloud-native patterns, and enterprise solutions.">
+    <title>System Architecture - iDigital | Scalable System Design</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/mobile-critical.css">
+    <link rel="stylesheet" href="../css/hero-text-fix.css">
+    <link rel="stylesheet" href="../css/spacing-fix.css">
+    <link rel="stylesheet" href="../css/final-fixes.css">
+    <link rel="stylesheet" href="../css/navigation-fix.css">
+    <link rel="stylesheet" href="../css/stats-fix.css">
+    <link rel="stylesheet" href="../css/comprehensive-responsive-fix.css">
+    <link rel="stylesheet" href="../css/footer-text-fix.css">
+    <link rel="stylesheet" href="../css/hero-hover-fix.css">
+    <link rel="stylesheet" href="../css/menu-dropdown-fix.css">
+    <link rel="stylesheet" href="../css/mega-menu-background-fix.css">
+    <link rel="stylesheet" href="../css/mega-menu-layout-fix.css">
+    <link rel="stylesheet" href="../css/mobile-navigation-fix.css">
+    <link rel="stylesheet" href="../css/mega-menu-responsive-fix.css">
+    <link rel="stylesheet" href="../css/mobile-fix.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html" class="logo-text">iDigital</a>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">
+                        Services <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu mega-menu">
+                        <div class="mega-menu-content">
+                            <div class="mega-menu-column">
+                                <h4>Development Services</h4>
+                                <a href="windows-development.html">Windows App Development</a>
+                                <a href="mac-development.html">Mac App Development</a>
+                                <a href="mobile-development.html">Mobile Apps (iOS/Android)</a>
+                                <a href="web-development.html">Web Applications</a>
+                                <a href="backend-development.html">Backend Development</a>
+                                <a href="frontend-development.html">Frontend Development</a>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Infrastructure & Cloud</h4>
+                                <a href="database-solutions.html">Database Solutions</a>
+                                <a href="cloud-services.html">Cloud Services</a>
+                                <a href="devops.html">DevOps & CI/CD</a>
+                                <a href="system-architecture.html">System Architecture</a>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Emerging Technologies</h4>
+                                <a href="ai-services.html">AI Services & ML</a>
+                                <a href="iot-solutions.html">IoT Solutions</a>
+                                <a href="blockchain.html">Blockchain Development</a>
+                                <a href="ar-vr.html">AR/VR Development</a>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Security & Quality</h4>
+                                <a href="secure-coding.html">Secure Coding Practices</a>
+                                <a href="security-audits.html">Security Audits</a>
+                                <a href="penetration-testing.html">Penetration Testing</a>
+                                <a href="code-reviews.html">Code Reviews</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">
+                        Technologies <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="programming-languages.html">Programming Languages</a>
+                        <a href="frameworks.html">Frameworks & Libraries</a>
+                        <a href="databases.html">Databases</a>
+                        <a href="cloud-platforms.html">Cloud Platforms</a>
+                    </div>
+                </div>
+                
+                <a href="industries.html" class="nav-link">Industries</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-cta">
+                <a href="get-quote.html" class="btn btn-primary">Get Quote</a>
+            </div>
+            
+                <a href="get-quote.html" class="btn btn-primary" data-translate="nav-get-quote">Get Quote</a>
+                <div class="nav-item dropdown language-selector">
+                    <a href="#" class="nav-link dropdown-toggle">
+                         EN <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item active" data-lang="en"> English</a>
+                        <a href="#" class="dropdown-item" data-lang="ar"> ???????</a>
+                        <a href="#" class="dropdown-item" data-lang="es"> Espa�ol</a>
+                        <a href="#" class="dropdown-item" data-lang="ru"> ???????</a>
+                        <a href="#" class="dropdown-item" data-lang="tr"> T�rk�e</a>
+                        <a href="#" class="dropdown-item" data-lang="pt"> Portugu�s</a>
+                        <a href="#" class="dropdown-item" data-lang="ka"> ???????</a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="hero-background">
+            <div class="floating-elements">
+                <div class="floating-element" data-speed="0.5"><i class="fas fa-sitemap"></i></div>
+                <div class="floating-element" data-speed="0.8"><i class="fas fa-project-diagram"></i></div>
+                <div class="floating-element" data-speed="0.3"><i class="fas fa-layer-group"></i></div>
+                <div class="floating-element" data-speed="0.6"><i class="fas fa-cubes"></i></div>
+                <div class="floating-element" data-speed="0.4"><i class="fas fa-network-wired"></i></div>
+                <div class="floating-element" data-speed="0.7"><i class="fas fa-server"></i></div>
+                <div class="floating-element" data-speed="0.5"><i class="fas fa-chess-board"></i></div>
+            </div>
+            <div class="particle-container" id="particles"></div>
+        </div>
+        <div class="container">
+            <div class="page-header-content">
+                <h1 class="hero-animated-bg">System Architecture</h1>
+                <p>Design robust, scalable system architectures with microservices, cloud-native patterns, and enterprise-grade solutions for complex business requirements.</p>
+                <div class="breadcrumb">
+                    <a href="../index.html">Home</a>
+                    <span>/</span>
+                    <span>Services</span>
+                    <span>/</span>
+                    <span>System Architecture</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Overview -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text slide-in-right">
+                    <h2>Architectural Excellence</h2>
+                    <p>Our system architects design comprehensive solutions that balance performance, scalability, maintainability, and cost-effectiveness. We create architectures that grow with your business while maintaining reliability and security at every level.</p>
+                    <p>From monolithic modernization to cloud-native microservices, we apply proven architectural patterns and emerging technologies to solve complex technical challenges. Our approach includes domain-driven design, event sourcing, and distributed system patterns.</p>
+                    <div class="service-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                            <span>Scalable Design</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Resilient Systems</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-cogs"></i>
+                            <span>Modular Architecture</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=400&fit=crop" alt="System Architecture" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Patterns -->
+    <section class="technologies">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Architecture Patterns</h2>
+                <p class="section-subtitle">Modern architectural approaches for scalable systems</p>
+            </div>
+            
+            <div class="tech-categories">
+                <div class="tech-category architecture-card bounce-in" data-category="microservices">
+                    <div class="architecture-icon pulse-animation">
+                        <i class="fas fa-cubes"></i>
+                    </div>
+                    <h3>Microservices Architecture</h3>
+                    <p>Distributed system design with independent, scalable services and domain boundaries.</p>
+                    <div class="architecture-flow">
+                        <div class="arch-layer">API Gateway</div>
+                        <div class="arch-arrow">↓</div>
+                        <div class="arch-layer active">Microservices</div>
+                        <div class="arch-arrow">↓</div>
+                        <div class="arch-layer">Data Layer</div>
+                    </div>
+                    <div class="architecture-benefits">
+                        <span>Independent Scaling</span>
+                        <span>Technology Diversity</span>
+                        <span>Fault Isolation</span>
+                        <span>Team Autonomy</span>
+                    </div>
+                </div>
+                
+                <div class="tech-category architecture-card slide-in-left" data-category="serverless">
+                    <div class="architecture-icon glow-effect">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Serverless Architecture</h3>
+                    <p>Event-driven, function-based architecture with automatic scaling and pay-per-use model.</p>
+                    <div class="architecture-flow">
+                        <div class="arch-layer">Event Trigger</div>
+                        <div class="arch-arrow">↓</div>
+                        <div class="arch-layer active">Functions</div>
+                        <div class="arch-arrow">↓</div>
+                        <div class="arch-layer">Managed Services</div>
+                    </div>
+                    <div class="architecture-benefits">
+                        <span>Zero Maintenance</span>
+                        <span>Auto Scaling</span>
+                        <span>Cost Efficient</span>
+                        <span>Rapid Development</span>
+                    </div>
+                </div>
+                
+                <div class="tech-category architecture-card slide-in-right" data-category="eventdriven">
+                    <div class="architecture-icon rotate-in">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h3>Event-Driven Architecture</h3>
+                    <p>Asynchronous communication patterns with event sourcing and CQRS implementation.</p>
+                    <div class="architecture-flow">
+                        <div class="arch-layer">Event Producer</div>
+                        <div class="arch-arrow">↓</div>
+                        <div class="arch-layer active">Event Bus</div>
+                        <div class="arch-arrow">↓</div>
+                        <div class="arch-layer">Event Consumer</div>
+                    </div>
+                    <div class="architecture-benefits">
+                        <span>Loose Coupling</span>
+                        <span>Real-time Processing</span>
+                        <span>Event Sourcing</span>
+                        <span>CQRS Pattern</span>
+                    </div>
+                </div>
+                
+                <div class="tech-category architecture-card fade-in-up" data-category="hybrid">
+                    <div class="architecture-icon pulse-animation">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3>Hybrid Architecture</h3>
+                    <p>Multi-cloud and on-premise integration with legacy system modernization strategies.</p>
+                    <div class="architecture-flow">
+                        <div class="arch-layer">Legacy Systems</div>
+                        <div class="arch-arrow">↓</div>
+                        <div class="arch-layer active">Integration Layer</div>
+                        <div class="arch-arrow">↓</div>
+                        <div class="arch-layer">Cloud Services</div>
+                    </div>
+                    <div class="architecture-benefits">
+                        <span>Legacy Integration</span>
+                        <span>Gradual Migration</span>
+                        <span>Multi-Cloud</span>
+                        <span>Risk Mitigation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Principles -->
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Architecture Excellence</h2>
+                <p class="section-subtitle">Fundamental principles for robust system design</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card bounce-in">
+                    <div class="feature-icon glow-effect">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </div>
+                    <h3>Scalability Design</h3>
+                    <p>Horizontal and vertical scaling strategies with load balancing, caching, and distributed architecture patterns.</p>
+                </div>
+                
+                <div class="feature-card slide-in-left">
+                    <div class="feature-icon pulse-animation">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Fault Tolerance</h3>
+                    <p>Circuit breaker patterns, bulkhead isolation, and graceful degradation for resilient system behavior.</p>
+                </div>
+                
+                <div class="feature-card slide-in-right">
+                    <div class="feature-icon rotate-in">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>High Availability</h3>
+                    <p>Multi-region deployment, automatic failover, and disaster recovery planning for 99.99% uptime.</p>
+                </div>
+                
+                <div class="feature-card scale-in">
+                    <div class="feature-icon glow-effect">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Performance Optimization</h3>
+                    <p>Latency reduction, throughput maximization, and resource optimization through architectural design.</p>
+                </div>
+                
+                <div class="feature-card fade-in-up">
+                    <div class="feature-icon pulse-animation">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Security by Design</h3>
+                    <p>Zero-trust architecture, defense in depth, and security patterns integrated at every architectural layer.</p>
+                </div>
+                
+                <div class="feature-card slide-in-left">
+                    <div class="feature-icon rotate-in">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Observability</h3>
+                    <p>Comprehensive monitoring, logging, tracing, and metrics collection for system health and performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Process */
+    <section class="about-section" style="background: var(--light-color);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Architecture Design Process</h2>
+                <p class="section-subtitle">Systematic approach to scalable system design</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="process-step bounce-in">
+                    <div class="step-number">01</div>
+                    <h3>Requirements Analysis</h3>
+                    <p>Business requirements gathering, non-functional requirements definition, and constraint identification for informed design decisions.</p>
+                </div>
+                
+                <div class="process-step slide-in-left">
+                    <div class="step-number">02</div>
+                    <h3>Architecture Design</h3>
+                    <p>System decomposition, component design, interface definition, and technology selection based on requirements and constraints.</p>
+                </div>
+                
+                <div class="process-step slide-in-right">
+                    <div class="step-number">03</div>
+                    <h3>Validation & Prototyping</h3>
+                    <p>Architecture validation through prototypes, proof of concepts, and performance testing to verify design decisions.</p>
+                </div>
+                
+                <div class="process-step scale-in">
+                    <div class="step-number">04</div>
+                    <h3>Implementation & Evolution</h3>
+                    <p>Guided implementation, architecture governance, and continuous evolution based on feedback and changing requirements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Design Your Architecture?</h2>
+                <p>Create a robust, scalable system architecture that supports your business growth and technical requirements.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-lg">Start Architecture Project</a>
+                    <a href="get-quote.html" class="btn btn-secondary btn-lg">Get Architecture Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="../assets/images/idigital-logo-white.svg" alt="iDigital">
+                    </div>
+                    <p>Transforming businesses through secure, innovative digital solutions. Your trusted technology partner for the digital age.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer-services">Services</h4>
+                    <ul>
+                        <li><a href="mobile-development.html">Mobile Development</a></li>
+                        <li><a href="web-development.html">Web Applications</a></li>
+                        <li><a href="ai-services.html">AI Services</a></li>
+                        <li><a href="cloud-services.html">Cloud Solutions</a></li>
+                        <li><a href="security-audits.html">Security Auditing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer-technologies">Technologies</h4>
+                    <ul>
+                        <li><a href="programming-languages.html">Programming Languages</a></li>
+                        <li><a href="frameworks.html">Frameworks</a></li>
+                        <li><a href="databases.html">Databases</a></li>
+                        <li><a href="cloud-platforms.html">Cloud Platforms</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer-company">Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html"><span data-translate="footer-privacy">Privacy Policy</span></a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +1 504 342 9109</p>
+                        <p><i class="fas fa-envelope"></i> software@idigitalusa.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 1851 Rousseau St, New Orleans LA 70130</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 iDigital. All rights reserved. | <a href="privacy.html"><span data-translate="footer-privacy">Privacy Policy</span></a> | <a href="terms.html"><span data-translate="footer-terms">Terms of Service</span></a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+    <script src="../js/animations.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

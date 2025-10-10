@@ -1,0 +1,77 @@
+/* FOOTER TEXT COLOR FIXES */
+
+/* FORCE ALL FOOTER TEXT TO BE WHITE */
+.footer,
+.footer *,
+.footer-bottom,
+.footer-bottom *,
+.footer-section,
+.footer-section *,
+.footer p,
+.footer a,
+.footer span,
+.footer div {
+    color: var(--white) !important;
+}
+
+/* FOOTER LINKS */
+.footer a:hover,
+.footer-bottom a:hover {
+    color: var(--secondary-color) !important;
+    text-decoration: underline !important;
+}
+
+/* FOOTER COPYRIGHT TEXT */
+.footer-bottom p {
+    color: var(--white) !important;
+    text-align: center !important;
+}
+
+/* FOOTER LOGO TEXT */
+.footer-logo-text {
+    color: var(--white) !important;
+    font-family: 'Myriad Pro', 'Inter', sans-serif !important;
+    font-size: var(--font-size-xl) !important;
+    font-weight: 700 !important;
+}
+
+/* ENSURE NO CONFLICTING STYLES */
+footer,
+footer *,
+.footer-container,
+.footer-container * {
+    color: var(--white) !important;
+}
+
+/* FOOTER ICONS */
+.footer i,
+.footer-section i,
+.contact-info i {
+    color: var(--white) !important;
+}
+
+/* FOOTER HEADINGS */
+.footer h4,
+.footer-section h4 {
+    color: var(--white) !important;
+    font-weight: 600 !important;
+}
+
+/* FOOTER LISTS */
+.footer ul,
+.footer li,
+.footer-section ul,
+.footer-section li {
+    color: var(--white) !important;
+}
+
+.footer ul li a,
+.footer-section ul li a {
+    color: var(--white) !important;
+    transition: color var(--transition-base) !important;
+}
+
+.footer ul li a:hover,
+.footer-section ul li a:hover {
+    color: var(--secondary-color) !important;
+}

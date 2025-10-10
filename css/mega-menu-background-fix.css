@@ -1,0 +1,119 @@
+/* MEGA MENU BACKGROUND FIX */
+
+/* Ensure all mega menu elements have proper dark background */
+.mega-dropdown .dropdown-menu,
+.mega-menu {
+    background: var(--dark-color) !important;
+    border: none !important;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Mega menu content wrapper */
+.mega-menu-content {
+    background: var(--dark-color) !important;
+    border-radius: var(--border-radius-md) !important;
+    padding: var(--spacing-lg) !important;
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 0 !important;
+    width: 100% !important;
+}
+
+/* Each column background */
+.mega-menu-column {
+    background: var(--dark-color) !important;
+    padding: var(--spacing-md) var(--spacing-lg) !important;
+    border-radius: 0 !important;
+    position: relative !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Remove border from last column */
+.mega-menu-column:last-child {
+    border-right: none !important;
+}
+
+/* Column headers */
+.mega-menu-column h4 {
+    background: var(--dark-color) !important;
+    color: var(--accent-color) !important;
+    font-size: var(--font-size-sm) !important;
+    font-weight: 600 !important;
+    margin-bottom: var(--spacing-sm) !important;
+    padding: var(--spacing-sm) 0 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    border-bottom: 1px solid rgba(0, 212, 255, 0.2) !important;
+}
+
+/* Column links */
+.mega-menu-column a {
+    background: var(--dark-color) !important;
+    color: var(--gray-300) !important;
+    padding: 0.6rem 0 !important;
+    font-size: var(--font-size-sm) !important;
+    display: block !important;
+    text-decoration: none !important;
+    transition: all var(--transition-fast) !important;
+    border-radius: var(--border-radius-xs) !important;
+    margin: 2px 0 !important;
+}
+
+.mega-menu-column a:hover {
+    background: var(--primary-color) !important;
+    color: var(--white) !important;
+    transform: translateX(4px) !important;
+    padding-left: var(--spacing-sm) !important;
+}
+
+/* Override any conflicting styles */
+.dropdown-menu.mega-menu {
+    background: var(--dark-color) !important;
+}
+
+.dropdown-menu.mega-menu * {
+    background-color: var(--dark-color) !important;
+}
+
+/* Force background on all mega menu elements */
+.nav-item.dropdown .dropdown-menu.mega-menu,
+.nav-item.dropdown .dropdown-menu .mega-menu-content,
+.nav-item.dropdown .dropdown-menu .mega-menu-column {
+    background: var(--dark-color) !important;
+}
+
+/* Services mega menu specific (if it has a specific class) */
+.services-mega .dropdown-menu,
+.services-mega .mega-menu-content,
+.services-mega .mega-menu-column {
+    background: var(--dark-color) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .mega-menu-content {
+        grid-template-columns: 1fr !important;
+        gap: var(--spacing-sm) !important;
+        padding: var(--spacing-md) !important;
+    }
+    
+    .mega-menu-column {
+        background: var(--gray-100) !important;
+        padding: var(--spacing-sm) !important;
+    }
+    
+    .mega-menu-column h4 {
+        background: var(--gray-100) !important;
+        color: var(--primary-color) !important;
+    }
+    
+    .mega-menu-column a {
+        background: var(--gray-100) !important;
+        color: var(--dark-color) !important;
+    }
+    
+    .mega-menu-column a:hover {
+        background: var(--primary-color) !important;
+        color: var(--white) !important;
+    }
+}

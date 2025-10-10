@@ -1,0 +1,80 @@
+/* REMOVE VERTICAL HOVER EFFECTS FROM HERO */
+
+/* DISABLE ALL HOVER TRANSFORMS ON HERO TEXT */
+.hero-title,
+.hero-title *,
+.typing-text,
+.hero-content,
+.hero-content *,
+.hero-subtitle,
+.hero-cta,
+.hero-cta * {
+    transform: none !important;
+    transition: color var(--transition-base) !important;
+}
+
+.hero-title:hover,
+.hero-title *:hover,
+.typing-text:hover,
+.hero-content:hover,
+.hero-content *:hover,
+.hero-subtitle:hover {
+    transform: none !important;
+    transition: color var(--transition-base) !important;
+}
+
+/* REMOVE ANY VERTICAL MOVEMENT ON HOVER */
+.hero *:hover {
+    transform: translateY(0) !important;
+}
+
+/* KEEP ONLY BUTTON HOVER EFFECTS */
+.hero-cta .btn:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: var(--shadow-lg) !important;
+}
+
+/* DISABLE HOVER EFFECTS ON HERO BACKGROUND ELEMENTS */
+.hero-background,
+.hero-background *,
+.floating-elements,
+.floating-elements *,
+.particle-container,
+.particle-container * {
+    pointer-events: none !important;
+}
+
+/* ENSURE NO HOVER TRANSFORMS ON HERO STATS */
+.hero-stats,
+.hero-stats *,
+.stat,
+.stat *,
+.stat-number,
+.stat-label {
+    transform: none !important;
+}
+
+.hero-stats:hover,
+.hero-stats *:hover,
+.stat:hover,
+.stat *:hover,
+.stat-number:hover,
+.stat-label:hover {
+    transform: none !important;
+    transition: color var(--transition-base) !important;
+}
+
+/* REMOVE ANY SCALE OR TRANSFORM EFFECTS */
+.hero .scale-in,
+.hero .fade-in-up,
+.hero .slide-in-left,
+.hero .slide-in-right {
+    transform: none !important;
+}
+
+.hero .scale-in:hover,
+.hero .fade-in-up:hover,
+.hero .slide-in-left:hover,
+.hero .slide-in-right:hover {
+    transform: none !important;
+}
